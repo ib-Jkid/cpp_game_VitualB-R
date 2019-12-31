@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/bank.jpeg</file>
+        <file>images/bg.jpg</file>
+        <file>images/bodyguard.jpg</file>
+        <file>images/car.jpg</file>
+        <file>images/cheque.png</file>
+        <file>images/factory.jpeg</file>
+        <file>images/gun.jpg</file>
+        <file>images/handcuff.png</file>
+        <file>images/home.jpg</file>
+        <file>images/house.jpeg</file>
+        <file>images/lawyer.jpg</file>
+        <file>images/money.jpg</file>
+        <file>images/refinery.jpg</file>
+        <file>images/robber.png</file>
+        <file>images/spiral.png</file>
+        <file>images/station.jpg</file>
+        <file>images/thug.jpg</file>
+        <file>images/carrot.jpg</file>
+        <file>images/energy-drink.jpg</file>
+        <file>images/kitchen.jpg</file>
+        <file>images/potatoes.jpg</file>
+        <file>images/spagetti.jpg</file>
+        <file>images/beans.jpg</file>
+        <file>images/rice.png</file>
+        <file>images/rice.jpg</file>
+        <file>images/bronze.jpg</file>
+        <file>images/crude.png</file>
+        <file>images/gold.jpg</file>
+        <file>images/metal.jpeg</file>
+        <file>images/platinum.jpg</file>
+        <file>images/silver.jpg</file>
+        <file>images/gold.jpeg</file>
+        <file>images/platinum.jpeg</file>
+        <file>images/tablet.jpeg</file>
+        <file>images/checkup.jpeg</file>
+        <file>images/injection.png</file>
+        <file>images/nurse.jpeg</file>
+        <file>images/hospitalized.jpeg</file>
+        <file>images/bath.jpeg</file>
+        <file>images/brusht.jpeg</file>
+        <file>images/laundry.jpeg</file>
+        <file>images/washHand.jpeg</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

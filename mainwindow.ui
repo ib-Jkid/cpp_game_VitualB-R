@@ -1,0 +1,4312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1300</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>VitualB</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: pinl;
+color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>181</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="homePageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>HOME</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bankPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>BANK</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="assetsPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>ASSETS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="casinoPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>CASINO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="crimePageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>CRIME</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="stockPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>STOCK</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="stationPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>STATION</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="expensesPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>EXPENSES</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clinicPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>CLINIC</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="groomingPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>GROOMING</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="kitchenPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>KITCHEN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="jobsPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>JOBS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="optionPageButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;
+font-weight: bold;</string>
+       </property>
+       <property name="text">
+        <string>OPTION</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>153</x>
+      <y>1</y>
+      <width>941</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>891</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:  white;</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="homePage"/>
+     <widget class="QWidget" name="bankPage">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QWidget" name="widget_16" native="true">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>220</y>
+         <width>230</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  black;</string>
+       </property>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>0</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>DEPOSITE</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="depositeComboBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>111</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>$50,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$100,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$200,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$250,000</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="depositeButton">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>20</y>
+          <width>88</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: grey;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Deposite</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="fullDepositeButton">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>60</y>
+          <width>111</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: green;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Full Desposite</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_17" native="true">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>0</y>
+         <width>230</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;</string>
+       </property>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>0</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>WITHDRAW</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="withdrawalComboBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>111</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>$50,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$100,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$200,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$250,000</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="fullWithdrawalButton">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>60</y>
+          <width>111</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: green;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Full Withdraw</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="withdrawalButton">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>20</y>
+          <width>88</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: grey;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Withdraw</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_18" native="true">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>110</y>
+         <width>230</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;</string>
+       </property>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>0</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>LOAN</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="loanButton">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>20</y>
+          <width>88</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: grey;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Apply</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="loanComboBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>111</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+color: black;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>$50,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$100,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$200,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$250,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$500,000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>$1,000,000</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="payLoanButton">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>60</y>
+          <width>111</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: green;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Pay Dept</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>10</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <property name="text">
+        <string>SERVICE CHARGE: $100</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>130</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <property name="text">
+        <string>OUTSTANDING DEPT</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="outstandingDept">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>150</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:  red;
+font-size: 25px;</string>
+       </property>
+       <property name="text">
+        <string>10000</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bankAccountBalance">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>60</y>
+         <width>211</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:  black;
+font-size: 39px;
+background-color: white;
+self-align: center;</string>
+       </property>
+       <property name="text">
+        <string>10000</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>40</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <property name="text">
+        <string>ACCOUNT BALANCE</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>190</y>
+         <width>101</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <property name="text">
+        <string>Loan Limit</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="loanLimitLabel">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>210</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;
+font-size: 25px;</string>
+       </property>
+       <property name="text">
+        <string>10000</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_19" native="true">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>330</y>
+         <width>230</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  black;</string>
+       </property>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>0</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>SCHOOL LOAN</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="collectSchoolLoanButton">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>50</y>
+          <width>111</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: green;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Collect Loan</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="schoolLoanLimit">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;</string>
+        </property>
+        <property name="text">
+         <string>$100000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>80</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 10px;</string>
+        </property>
+        <property name="text">
+         <string>pay: $500/cycle</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="assetsPage">
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/factory.jpeg);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>0</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/house.jpeg)</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/refinery.jpg)</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_5" native="true">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>160</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/bank.jpeg)</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_6" native="true">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>90</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/money.jpg)</string>
+       </property>
+       <widget class="QLabel" name="accummulatedIncome">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:  white;
+font-size: 25px;
+border-image: none;
+background-color: black;</string>
+        </property>
+        <property name="text">
+         <string>10000</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QProgressBar" name="accumulatedIncomeProgressBar">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>63</y>
+         <width>118</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="collectIncomeButton">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>180</y>
+         <width>121</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Collect</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>61</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+border: none;
+color: black;</string>
+       </property>
+       <property name="plainText">
+        <string>Owned :
+Income : 
+Cost : </string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>80</y>
+         <width>61</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+border: none;
+color: black;</string>
+       </property>
+       <property name="plainText">
+        <string>Owned :
+Income : 
+Cost : </string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>240</y>
+         <width>61</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+border: none;
+color: black;</string>
+       </property>
+       <property name="plainText">
+        <string>Owned :
+Income : 
+Cost : </string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>240</y>
+         <width>61</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+border: none;
+color: black;</string>
+       </property>
+       <property name="plainText">
+        <string>Owned :
+Income : 
+Cost : </string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="factoryComboBox">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:  12px;
+background-color: black;
+color: white;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="factoryBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>130</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>buy</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="factorySellButton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>130</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>sell</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="houseComboBox">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>130</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:  12px;
+background-color: black;
+color: white;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="houseSellButton">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>130</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>sell</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="houseBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>130</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>buy</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="bankAssetComboBox">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>290</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:  12px;
+background-color: black;
+color: white;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="BankSellButton">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>290</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>sell</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BankBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>290</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>buy</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="refineryComboBox">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>290</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:  12px;
+background-color: black;
+color: white;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="refinerySellButton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>290</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>sell</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="refineryBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>290</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>buy</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="factoryOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>81</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="factoryIncome">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>96</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="factoryCostLabel">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>110</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="refineryOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>240</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="refineryCostLabel">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>269</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="refineryIncomeLabel">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>255</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bankOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>241</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bankCostLabel">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>270</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bankIncomeLabel">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>256</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="houseOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>80</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="houseCostLabel">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>109</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="houseIncomeLabel">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>95</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10px;
+color: black;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="incomePerCycleLabel">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>280</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <property name="text">
+        <string>$ 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>250</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;
+</string>
+       </property>
+       <property name="text">
+        <string>Income Per Cycle</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="casinoPage">
+      <widget class="QWidget" name="widget_7" native="true">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>221</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/spiral.png)</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>20</y>
+         <width>79</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>50</y>
+         <width>79</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>$50,000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>$100,000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>$150,000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>$200,000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>$250,000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>$500,000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>$1,000,000</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>20</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <property name="text">
+        <string>Pick a number</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>50</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <property name="text">
+        <string>Stack your bet</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>80</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:  white;
+background-color: black;
+border: 2px solid red;
+border-radius: 5px;</string>
+       </property>
+       <property name="text">
+        <string>ROLL</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="crimePage">
+      <widget class="QWidget" name="widget_8" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>281</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  lightblue;</string>
+       </property>
+       <widget class="QWidget" name="widget_12" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>90</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/robber.png)</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>10</y>
+          <width>67</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: blue;
+font-size: 22px;</string>
+        </property>
+        <property name="text">
+         <string>Theft</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>60</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black;</string>
+        </property>
+        <property name="text">
+         <string>Success Rate</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="theftSuccessRate">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>60</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: red;</string>
+        </property>
+        <property name="text">
+         <string>50%</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="commitTheftButton">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>20</y>
+          <width>88</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: black;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>$10,000</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_9" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>281</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  lightblue;</string>
+       </property>
+       <widget class="QWidget" name="widget_13" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>90</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/gun.jpg)</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>0</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: blue;
+font-size: 22px;</string>
+        </property>
+        <property name="text">
+         <string>Robbery</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>60</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black;</string>
+        </property>
+        <property name="text">
+         <string>Success Rate</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="robberySuccessRate">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>60</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: red;</string>
+        </property>
+        <property name="text">
+         <string>50%</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="commitRobberyButton">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>88</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: black;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>$70,000</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_10" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>281</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  lightblue;</string>
+       </property>
+       <widget class="QWidget" name="widget_14" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>90</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/cheque.png)</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>10</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: blue;
+font-size: 22px;</string>
+        </property>
+        <property name="text">
+         <string>Bank Fraud</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>60</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black;</string>
+        </property>
+        <property name="text">
+         <string>Success Rate</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="bankFraudSuccessRate">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>60</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: red;</string>
+        </property>
+        <property name="text">
+         <string>50%</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="commitBankFraudButton">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>88</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: black;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>$150,000</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_11" native="true">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>110</y>
+         <width>131</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:  url(:/images/images/handcuff.png)</string>
+       </property>
+       <widget class="QLabel" name="freedomStatus">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size: 20px;
+color: black;
+border-image: none;
+</string>
+        </property>
+        <property name="text">
+         <string>FREE</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="stockPage">
+      <widget class="QWidget" name="widget_31" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="widget_34" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>120</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+border-image: url(:/images/images/gold.jpeg);</string>
+        </property>
+        <widget class="QLabel" name="label_40">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>60</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: none;
+color: black;
+background-color: white;</string>
+         </property>
+         <property name="text">
+          <string>Gold</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="goldPriceLabel">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>91</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(238, 238, 236);
+border-image: none;
+background-color: rgb(46, 52, 54);</string>
+         </property>
+         <property name="text">
+          <string>Price: $150</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_35" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/metal.jpeg);</string>
+       </property>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;</string>
+        </property>
+        <property name="text">
+         <string>Iron</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ironPriceLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(238, 238, 236);
+border-image: none;
+background-color: rgb(46, 52, 54);</string>
+        </property>
+        <property name="text">
+         <string>Price: $150</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_36" native="true">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>170</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/platinum.jpeg);</string>
+       </property>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;</string>
+        </property>
+        <property name="text">
+         <string>Platinium</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="platiniumPriceLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(238, 238, 236);
+border-image: none;
+background-color: rgb(46, 52, 54);</string>
+        </property>
+        <property name="text">
+         <string>Price: $150</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_37" native="true">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>170</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/silver.jpg);</string>
+       </property>
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;</string>
+        </property>
+        <property name="text">
+         <string>Silver</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="silverPriceLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(238, 238, 236);
+border-image: none;
+background-color: rgb(46, 52, 54);</string>
+        </property>
+        <property name="text">
+         <string>Price: $150</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_38" native="true">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>30</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/crude.png);</string>
+       </property>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;</string>
+        </property>
+        <property name="text">
+         <string>Oil</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="oilPriceLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(238, 238, 236);
+border-image: none;
+background-color: rgb(46, 52, 54);</string>
+        </property>
+        <property name="text">
+         <string>Price: $150</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_32" native="true">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/bronze.jpg);</string>
+       </property>
+       <widget class="QWidget" name="widget_33" native="true">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>60</y>
+          <width>120</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/bronze.jpg);</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;</string>
+        </property>
+        <property name="text">
+         <string>Bronze</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="bronzePriceLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(238, 238, 236);
+border-image: none;
+background-color: rgb(46, 52, 54);</string>
+        </property>
+        <property name="text">
+         <string>Price: $150</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="goldBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(52, 101, 164);</string>
+       </property>
+       <property name="text">
+        <string>BUY</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="goldSellButton">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(204, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Sell</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bronzeSellButton">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(204, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Sell</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bronzeBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(52, 101, 164);</string>
+       </property>
+       <property name="text">
+        <string>BUY</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="oilSellButton">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(204, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Sell</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="oilBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(52, 101, 164);</string>
+       </property>
+       <property name="text">
+        <string>BUY</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ironSellButton">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>260</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(204, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Sell</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ironBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>260</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(52, 101, 164);</string>
+       </property>
+       <property name="text">
+        <string>BUY</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="platinumSellButton">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>260</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(204, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Sell</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="platinumBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>260</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(52, 101, 164);</string>
+       </property>
+       <property name="text">
+        <string>BUY</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="silverBuyButton">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>260</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(52, 101, 164);</string>
+       </property>
+       <property name="text">
+        <string>BUY</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="silverSellButton">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>260</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(204, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Sell</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="goldOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(46, 52, 54);</string>
+       </property>
+       <property name="text">
+        <string>Own: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bronzeOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>140</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(46, 52, 54);</string>
+       </property>
+       <property name="text">
+        <string>Own: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="oilOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>140</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(46, 52, 54);</string>
+       </property>
+       <property name="text">
+        <string>Own: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="silverOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>290</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(46, 52, 54);</string>
+       </property>
+       <property name="text">
+        <string>Own: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="platiniumOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>290</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(46, 52, 54);</string>
+       </property>
+       <property name="text">
+        <string>Own: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ironOwnedLabel">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>290</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(46, 52, 54);</string>
+       </property>
+       <property name="text">
+        <string>Own: 0</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="stationPage">
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/station.jpg);</string>
+      </property>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>271</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: none; 
+background-color: black;</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt; font-weight:600;&quot;&gt;Hire a body Guard&lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;&lt;br /&gt;reduces your chance of getting robbed by 50%&lt;br /&gt;hire at the rate of $20,000 per Game Cycle&lt;br /&gt;this cannot be undone&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_20" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>91</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/bodyguard.jpg)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="hireBodyGuard">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>70</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: red;
+border-image: none;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Hire</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bailCostLabel">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>150</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: none;
+background-color: white;
+color:   black;
+font-size: 20px;</string>
+       </property>
+       <property name="text">
+        <string>Get Bail At $100,000</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="getBailButton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>180</y>
+         <width>181</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: none;
+background-color: rgb(193, 125, 17);
+color:  white;
+font-size: 25px;</string>
+       </property>
+       <property name="text">
+        <string>Get Bail</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="expensesPage">
+      <widget class="QTextEdit" name="textEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>0</y>
+         <width>341</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  rgb(43, 151, 156);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell';&quot;&gt;BUY A HOUSE&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;Put a roof over your head&lt;br /&gt;Reduces your chances of being robbed by 10%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_21" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>101</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/home.jpg)</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>80</y>
+         <width>341</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  rgb(43, 151, 156);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;HIRE THUG&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;Get the work done the hard way&lt;br /&gt;Increases success rate for crimes by 20% Cost $10,000/month&lt;br /&gt;Reduces your chances of being robbed by 10%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_22" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>101</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/thug.jpg);</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>180</y>
+         <width>341</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  rgb(43, 151, 156);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:12px; font-weight:600;&quot;&gt;BUY A CAR&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;Move around in style&lt;br /&gt;reduces your chances of being robbed by 10%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_23" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>180</y>
+         <width>101</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/car.jpg);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_24" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>250</y>
+         <width>101</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/lawyer.jpg);</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>250</y>
+         <width>341</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  rgb(43, 151, 156);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt; font-weight:600;&quot;&gt;HIRE A LAWYER&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;The suits won't wait&lt;br /&gt;increases your chances of winning law suits by 30% cost $15,000/month&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buyAHouse">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>50</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(164, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>$2,000,000</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buyACar">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>220</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(164, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>$200,000</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="hireALawyer">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>300</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(164, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Hire</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="hireThugs">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>150</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(164, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Hire</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="clinicPage">
+      <widget class="QWidget" name="widget_39" native="true">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>200</y>
+         <width>141</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/checkup.jpeg);</string>
+       </property>
+       <widget class="QPushButton" name="doCheckupButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>101</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: red;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Checkup</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="checkupBillLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>$50</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>0</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+text-align: center;
+</string>
+        </property>
+        <property name="text">
+         <string>Health +7</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_40" native="true">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>20</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/injection.png);</string>
+       </property>
+       <widget class="QPushButton" name="takeAShotButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>101</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: red;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Take A Shot</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="injectionCostLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>$200</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_59">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+text-align: center;
+</string>
+        </property>
+        <property name="text">
+         <string>Health +20</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_41" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/tablet.jpeg);</string>
+       </property>
+       <widget class="QPushButton" name="takeAPillButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>101</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: red;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Take A Pill</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pillCostLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Cantarell</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>$100</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_58">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+text-align: center;
+</string>
+        </property>
+        <property name="text">
+         <string>Health +10</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_42" native="true">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>20</y>
+         <width>141</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/nurse.jpeg);</string>
+       </property>
+       <widget class="QPushButton" name="HireANurseButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>140</y>
+          <width>101</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: red;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Hire A Nurse</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nurseSalaryLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: yellow;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>$100,000/cycle</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_43" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>271</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/hospitalized.jpeg);</string>
+       </property>
+       <widget class="QPushButton" name="payHospitalBillButton">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>100</y>
+          <width>101</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: red;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Pay Bill</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="hospitalBillLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>$2,000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>80</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+text-align: center;
+</string>
+        </property>
+        <property name="text">
+         <string>Health +100</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="groomingPage">
+      <widget class="QWidget" name="widget_44" native="true">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>151</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/washHand.jpeg);</string>
+       </property>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>56</x>
+          <y>0</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: white;
+color: black;</string>
+        </property>
+        <property name="text">
+         <string>Grooming +1</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_45" native="true">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>161</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/bath.jpeg);</string>
+       </property>
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>80</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: white;
+color: black;</string>
+        </property>
+        <property name="text">
+         <string>Grooming +15</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_46" native="true">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>180</y>
+         <width>151</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/brusht.jpeg);</string>
+       </property>
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>80</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: white;
+color: black;</string>
+        </property>
+        <property name="text">
+         <string>Grooming +7</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_47" native="true">
+       <property name="geometry">
+        <rect>
+         <x>249</x>
+         <y>180</y>
+         <width>161</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/laundry.jpeg);</string>
+       </property>
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>80</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: white;
+color: black;</string>
+        </property>
+        <property name="text">
+         <string>Grooming +50</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="washHandButton">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>130</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: none;
+background-color: black;</string>
+       </property>
+       <property name="text">
+        <string>$1</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="brushTeethButton">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>280</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: none;
+background-color: black;</string>
+       </property>
+       <property name="text">
+        <string>$5</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="doLaundryButton">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>280</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: none;
+background-color: black;</string>
+       </property>
+       <property name="text">
+        <string>$20</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="takeBathButton">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>130</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: none;
+background-color: black;</string>
+       </property>
+       <property name="text">
+        <string>$10</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="kitchenPage">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QWidget" name="widget_25" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>160</y>
+         <width>121</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/beans.jpg);</string>
+       </property>
+       <widget class="QPushButton" name="consumeBeans">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: rgb(237, 212, 0);
+</string>
+        </property>
+        <property name="text">
+         <string>Consume</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="beansCostLabel">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: black;</string>
+        </property>
+        <property name="text">
+         <string>$ 50</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_26" native="true">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/carrot.jpg);</string>
+       </property>
+       <widget class="QPushButton" name="consumeCarrot">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: rgb(237, 212, 0);
+</string>
+        </property>
+        <property name="text">
+         <string>Consume</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="carrotCostLabel">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: black;</string>
+        </property>
+        <property name="text">
+         <string>$ 50</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_28" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/potatoes.jpg);
+</string>
+       </property>
+       <widget class="QPushButton" name="consumePotatoes">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: rgb(237, 212, 0);
+</string>
+        </property>
+        <property name="text">
+         <string>Consume</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="potatoCostLabel">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: black;</string>
+        </property>
+        <property name="text">
+         <string>$ 50</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_29" native="true">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>210</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/rice.png);</string>
+       </property>
+       <widget class="QPushButton" name="consumeRice">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: rgb(237, 212, 0);
+</string>
+        </property>
+        <property name="text">
+         <string>Consume</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="riceCostLabel">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: black;</string>
+        </property>
+        <property name="text">
+         <string>$ 50</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_30" native="true">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>160</y>
+         <width>120</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/spagetti.jpg);</string>
+       </property>
+       <widget class="QPushButton" name="consumeSpagetti">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: rgb(237, 212, 0);
+</string>
+        </property>
+        <property name="text">
+         <string>Consume</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="spagettiCostLabel">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: black;</string>
+        </property>
+        <property name="text">
+         <string>$ 50</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_27" native="true">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>20</y>
+         <width>91</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/energy-drink.jpg);</string>
+       </property>
+       <widget class="QPushButton" name="energyDrink">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: rgb(237, 212, 0);
+</string>
+        </property>
+        <property name="text">
+         <string>Drink</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="energyDrinkLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>41</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+background-color: white;
+color: black;</string>
+        </property>
+        <property name="text">
+         <string>$ 100</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Potatoes</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>100</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Carrots</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>250</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;</string>
+       </property>
+       <property name="text">
+        <string>Spagetti</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>250</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Beans</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>160</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Energy Drink</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>290</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Rice</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="jobsPage">
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>10</y>
+         <width>67</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Jobs</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 30px;</string>
+       </property>
+       <property name="text">
+        <string>Comming Soon</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="optionPage">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Start New Game</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>120</y>
+         <width>161</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save &amp; Exit</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="noticeBoard">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>470</y>
+      <width>911</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));
+border-color: rgb(237, 212, 0);
+border-radius: 30px; 
+padding : 10px;
+color: rgb(46, 52, 54)
+
+</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-weight:600;&quot;&gt;Tips:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>30</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Health</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="healthStatusBar">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>30</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 233, 79);
+
+selection-background-color: rgb(243, 243, 243);
+color: rgb(85, 87, 83);
+
+
+</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="energyStatusBar">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>60</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 233, 79);
+
+selection-background-color: rgb(243, 243, 243);
+color: rgb(85, 87, 83);
+
+
+</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>60</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Energy</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="groomStatusBar">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>90</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 233, 79);
+
+selection-background-color: rgb(243, 243, 243);
+color: rgb(85, 87, 83);
+
+
+</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>90</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grooming</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="foodStatusBar">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>120</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 233, 79);
+
+selection-background-color: rgb(243, 243, 243);
+color: rgb(85, 87, 83);
+
+
+</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>120</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nutrition</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>180</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gold</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>210</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bronze</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>240</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Oil</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>270</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Iron</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>300</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Platinium</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>330</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Silver</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>150</y>
+      <width>104</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>STOCKS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="goldStatLabel">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>180</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-$ 0.95</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bronzeStatLabel">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>210</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-$ 0.95</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="crudeStatLabel">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>240</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-$ 0.95</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ironStatLabel">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>270</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-$ 0.95</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="platinumStatLabel">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>300</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-$ 0.95</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="silverStatLabel">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>330</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-$ 0.95</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="moneyAtHand">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>0</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="text">
+     <string>$ 0</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="gameUpdateBoard">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>580</y>
+      <width>911</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Cantarell';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1300</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
