@@ -1,0 +1,84 @@
+doctor salary: $1000/cycle
+cert cost: $25/cycle
+training period: 60 cycle;
+
+police salary: $300/cycle
+training cost: $10/cycle
+training period: 12 cycle
+
+bricklayer salary: $100/cycle;
+training cost: $4/cycle;
+trainig period: 6 cycle;
+
+#FOOD
+Rice: $1.5
+Beans: $2.0
+potatoes: $1
+carrots: $0.5
+spagetti: $1
+energy Drink: $1
+
+#Assets tax: 10% to all income && tax of 1.5% to all income worth / cycle
+houseCost: $19,500
+income: $1000/cycle
+
+
+factoryCost: $130,000
+income: $13,000/cycle
+
+bankCost: $500,000
+income: $50,000/cycle
+
+refineryCost: $1,300,000
+income: $150,000/cycle
+
+#Grooming
+washing hands: $0.1
+taking Bath: $1;
+brushing teeh: 0.5;
+laundry: $3
+
+#clinic
+pillCost: $4;
+injection: $6
+hospisalbill: $50;
+checkup: $2
+
+#Expenses
+
+houseCost: $20,000
+down Payment: $5,000
+percycle : $500
+period: 40 cycle
+
+
+houseRent: $35/cycle
+
+thugsSalary: $100/cycle
+car: $5000
+lawyerSalary: $300/cycle
+bodyGuard: $200/cycle
+nurseSalary: $250/cycle
+
+#PLAYER
+
+moneyAtHand: $100
+
+#Bank
+
+charges: $1 per transaction / cycle
+school loan limt $700
+
+
+#CRIME
+robbery $3000
+theft $1000
+fraud $7000
+#station
+bail $5000
+increase $100
+
+
+
+  
+

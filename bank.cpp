@@ -4,12 +4,12 @@ Bank::Bank()
 {
     accountBalance = 0.0;
     dept = 0.0;
-    moneyAtHand = 0.0;
-    charges = 100.0;
+    moneyAtHand = 100.0;
+    charges = 1.0;
 
-    schoolLoanLimit = 10000.0;
+    schoolLoanLimit = 700.0;
     schoolLoan = 0.0;
-    schoolPayRate = 500;
+    schoolPayRate = 11;
 }
 
 double Bank::getFinancialSummary() {
@@ -21,7 +21,7 @@ double Bank::getFinancialSummary() {
 double Bank::collectSchoolLoan()
 {
     if(schoolLoan == 0.0) {
-        schoolLoan = schoolLoanLimit + 1000.0;
+        schoolLoan = schoolLoanLimit + (schoolLoanLimit / 100 * 10);
         return schoolLoanLimit;
     }
     return 0.0;

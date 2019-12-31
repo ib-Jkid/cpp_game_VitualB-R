@@ -42,25 +42,25 @@ MainWindow::~MainWindow()
 
 void MainWindow::runGameCycle() {
     bank.loose(expenses.getExpenses());
-    assets.gameCycle(0.10);
-    bank.gameCycle(0.10);
-    clinic.gameCycle(0.10);
-    expenses.gameCycle(0.10);
-    grooming.gameCycle(0.10);
-    kitchen.gameCycle(0.10);
+    assets.gameCycle(0.01);
+    bank.gameCycle(0.01);
+    clinic.gameCycle(0.01);
+    expenses.gameCycle(0.01);
+    grooming.gameCycle(0.01);
+    kitchen.gameCycle(0.01);
     player.gameCycle();
     stock.updateStock();
 
     if(player.isDead()) {
         QMessageBox::critical(this,"Game Over","you died!!");
-        this->close();
+         emit on_stop();
         qDebug() << "game Over" ;
 
         return ;
     }
     if((assets.getTotalAssetWorth() + bank.getFinancialSummary() + stock.getStockWorth()) < 0){
         QMessageBox::critical(this,"Game Over","You are broke");
-        this->close();
+         emit on_stop();
 
         return ;
     }
@@ -393,7 +393,7 @@ void MainWindow::updateExpensesUi() {
 
 
     //Expenses Ui
-    if(expenses.hasHouse())  {
+    if(expenses.hasHouse() && !expenses.getMortgaging() && !expenses.getRenting())  {
         ui->buyAHouse->setText("Sell");
     }else {
         ui->buyAHouse->setText("$"+QString::number((int) expenses.getHouseCost()));
@@ -416,6 +416,12 @@ void MainWindow::updateExpensesUi() {
     }else {
         ui->hireALawyer->setText("HIRE");
     }
+    if(expenses.getRenting()) {
+        ui->rentAHouse->setText("Renting");
+    }else {
+        ui->rentAHouse->setText("Rent");
+    }
+
 }
 
 void MainWindow::updateKitchenUi() {
@@ -774,7 +780,9 @@ void MainWindow::on_getBailButton_clicked()
 
 void MainWindow::on_buyAHouse_clicked()
 {
-    if(expenses.hasHouse()) {
+    if(expenses.getRenting()) {
+        updateNoticeBoard("You dont own this house");
+    }else if(expenses.hasHouse() && !expenses.getMortgaging()) {
         if(bank.earn(expenses.sellHouse())) {
             updateNoticeBoard("House sold");
         }else {
@@ -1205,5 +1213,49 @@ void MainWindow::on_collectSchoolLoanButton_clicked()
     }else {
          updateNoticeBoard("You have outstanding credit dept of $"+QString::number(bank.getSchoolLoan()) );
     }
+    updateBankUi();
+}
+
+void MainWindow::on_rentAHouse_clicked()
+{
+    if(expenses.getMortgaging()) {
+        updateNoticeBoard("You are unable to rent this house please ensure you don't already own it");
+    }else if(expenses.getRenting()) {
+        if(bank.spend(expenses.getHouseRent())) {
+            if(expenses.stopRentingHouse()) {
+                updateNoticeBoard("You moved out of the house");
+            }else {
+                qDebug() << "rentAHouseFunction failed" << endl;
+            }
+        }else {
+
+        }
+    }else if(expenses.rentAHouse()){
+        updateNoticeBoard("You are now renting the house @ $" + QString::number(expenses.getHouseRent()));
+    }
+    updateExpensesUi();
+    updateBankUi();
+}
+
+void MainWindow::on_aquireOnMotgageButton_clicked()
+{
+    if(expenses.getMortgaging()) {
+        updateNoticeBoard("You are already in a mortgage contract with the buyer");
+    }else if(expenses.getRenting()) {
+         updateNoticeBoard("You are renting this house please terminate that contract before initiating another");
+    }else {
+        if(bank.spend(expenses.getHouseMotgageDownPayment())){
+            if(expenses.initiateMortgageContract()) {
+                updateNoticeBoard("You have started the mortgage and would be charged $"
+                                  +QString::number(expenses.getMotgageCyclePayment()));
+
+            }else {
+                qDebug() << "aquireMortgage Function failed" << endl;
+            }
+        }else {
+            updateNoticeBoard("you do not have sufficient cash for down payment");
+        }
+    }
+    updateExpensesUi();
     updateBankUi();
 }

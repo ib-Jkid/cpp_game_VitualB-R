@@ -185,6 +185,10 @@ private slots:
     void on_doLaundryButton_clicked();
     void on_collectSchoolLoanButton_clicked();
 
+    void on_rentAHouse_clicked();
+
+    void on_aquireOnMotgageButton_clicked();
+
 signals:
     void on_stop();
 private:

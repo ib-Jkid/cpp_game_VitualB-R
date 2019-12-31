@@ -2,12 +2,12 @@
 
 Stock::Stock()
 {
-    crudePrice = 150.0;
-    goldPrice = 300.0;
-    platinumPrice = 200.0;
-    silverPrice = 175.0;
-    ironPrice = 100.0;
-    bronzePrice = 125.0;
+    crudePrice = 50.0;
+    goldPrice = 100.0;
+    platinumPrice = 70.0;
+    silverPrice = 60.0;
+    ironPrice = 30.0;
+    bronzePrice = 40.0;
 
     crudeOwned = 0;
     goldOwned = 0;
@@ -39,7 +39,7 @@ double Stock::getStockWorth() {
     );
 }
 double newPrice(double initailPrice) {
-    int percent = rand() % 100;
+    int percent = rand() % 100 + 1;
     int coin = rand() % 2;
     if(coin == 0) {
         initailPrice += (initailPrice /100 * percent);

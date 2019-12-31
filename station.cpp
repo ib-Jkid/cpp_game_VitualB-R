@@ -2,7 +2,7 @@
 
 Station::Station()
 {
-    bailAmount = 100000.0;
+    bailAmount = 5000.0;
 
 }
 
@@ -10,7 +10,7 @@ bool Station::getBail(bool spent)
 {
     if(spent) {
 
-        bailAmount += 5000.0;
+        bailAmount += 100;
         return true;
     }
     return false;

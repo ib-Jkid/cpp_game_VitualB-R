@@ -220,7 +220,7 @@ font-weight: bold;</string>
       <string notr="true">background-color:  white;</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>7</number>
      </property>
      <widget class="QWidget" name="homePage"/>
      <widget class="QWidget" name="bankPage">
@@ -230,7 +230,7 @@ font-weight: bold;</string>
       <widget class="QWidget" name="widget_16" native="true">
        <property name="geometry">
         <rect>
-         <x>60</x>
+         <x>20</x>
          <y>220</y>
          <width>230</width>
          <height>100</height>
@@ -327,7 +327,7 @@ color: white;</string>
       <widget class="QWidget" name="widget_17" native="true">
        <property name="geometry">
         <rect>
-         <x>60</x>
+         <x>20</x>
          <y>0</y>
          <width>230</width>
          <height>100</height>
@@ -424,7 +424,7 @@ color: white;</string>
       <widget class="QWidget" name="widget_18" native="true">
        <property name="geometry">
         <rect>
-         <x>60</x>
+         <x>20</x>
          <y>110</y>
          <width>230</width>
          <height>100</height>
@@ -648,7 +648,7 @@ font-size: 25px;</string>
       <widget class="QWidget" name="widget_19" native="true">
        <property name="geometry">
         <rect>
-         <x>60</x>
+         <x>20</x>
          <y>330</y>
          <width>230</width>
          <height>100</height>
@@ -2738,10 +2738,10 @@ font-size: 25px;</string>
       <widget class="QTextEdit" name="textEdit_2">
        <property name="geometry">
         <rect>
-         <x>100</x>
-         <y>0</y>
-         <width>341</width>
-         <height>71</height>
+         <x>120</x>
+         <y>10</y>
+         <width>401</width>
+         <height>91</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2752,17 +2752,18 @@ font-size: 25px;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell';&quot;&gt;BUY A HOUSE&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;Put a roof over your head&lt;br /&gt;Reduces your chances of being robbed by 10%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Own A House/Rent @ $35/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;Houses are expensive you can either obtain on motgage with a $1,000 down payment and subsequent $500 per cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Cantarell';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QWidget" name="widget_21" native="true">
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>0</y>
-         <width>101</width>
-         <height>71</height>
+         <y>10</y>
+         <width>121</width>
+         <height>91</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2772,9 +2773,9 @@ p, li { white-space: pre-wrap; }
       <widget class="QTextEdit" name="textEdit_3">
        <property name="geometry">
         <rect>
-         <x>100</x>
-         <y>80</y>
-         <width>341</width>
+         <x>120</x>
+         <y>120</y>
+         <width>401</width>
          <height>91</height>
         </rect>
        </property>
@@ -2787,15 +2788,15 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;HIRE THUG&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;Get the work done the hard way&lt;br /&gt;Increases success rate for crimes by 20% Cost $10,000/month&lt;br /&gt;Reduces your chances of being robbed by 10%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;Get the work done the hard way&lt;br /&gt;Increases success rate for crimes by 20% Cost $100/cycle&lt;br /&gt;Reduces your chances of being robbed by 10%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QWidget" name="widget_22" native="true">
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>80</y>
-         <width>101</width>
+         <y>120</y>
+         <width>121</width>
          <height>91</height>
         </rect>
        </property>
@@ -2806,10 +2807,10 @@ p, li { white-space: pre-wrap; }
       <widget class="QTextEdit" name="textEdit_4">
        <property name="geometry">
         <rect>
-         <x>100</x>
-         <y>180</y>
-         <width>341</width>
-         <height>61</height>
+         <x>120</x>
+         <y>220</y>
+         <width>401</width>
+         <height>91</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2821,16 +2822,16 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:12px; font-weight:600;&quot;&gt;BUY A CAR&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;Move around in style&lt;br /&gt;reduces your chances of being robbed by 10%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;Move around in style&lt;br /&gt;reduces your chances of being robbed by 50%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QWidget" name="widget_23" native="true">
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>180</y>
-         <width>101</width>
-         <height>61</height>
+         <y>220</y>
+         <width>121</width>
+         <height>91</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2841,9 +2842,9 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>250</y>
-         <width>101</width>
-         <height>71</height>
+         <y>330</y>
+         <width>121</width>
+         <height>91</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2853,10 +2854,10 @@ p, li { white-space: pre-wrap; }
       <widget class="QTextEdit" name="textEdit_5">
        <property name="geometry">
         <rect>
-         <x>100</x>
-         <y>250</y>
-         <width>341</width>
-         <height>71</height>
+         <x>120</x>
+         <y>330</y>
+         <width>401</width>
+         <height>91</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2868,48 +2869,32 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt; font-weight:600;&quot;&gt;HIRE A LAWYER&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;The suits won't wait&lt;br /&gt;increases your chances of winning law suits by 30% cost $15,000/month&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="buyAHouse">
-       <property name="geometry">
-        <rect>
-         <x>350</x>
-         <y>50</y>
-         <width>91</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(164, 0, 0);</string>
-       </property>
-       <property name="text">
-        <string>$2,000,000</string>
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:9pt;&quot;&gt;The suits won't wait&lt;br /&gt;increases your chances of winning law suits by 30% cost $300/month&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QPushButton" name="buyACar">
        <property name="geometry">
         <rect>
-         <x>360</x>
-         <y>220</y>
+         <x>440</x>
+         <y>280</y>
          <width>81</width>
-         <height>21</height>
+         <height>31</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(164, 0, 0);</string>
        </property>
        <property name="text">
-        <string>$200,000</string>
+        <string>$5,000</string>
        </property>
       </widget>
       <widget class="QPushButton" name="hireALawyer">
        <property name="geometry">
         <rect>
-         <x>400</x>
-         <y>300</y>
-         <width>41</width>
-         <height>21</height>
+         <x>460</x>
+         <y>390</y>
+         <width>61</width>
+         <height>31</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2922,10 +2907,10 @@ p, li { white-space: pre-wrap; }
       <widget class="QPushButton" name="hireThugs">
        <property name="geometry">
         <rect>
-         <x>390</x>
-         <y>150</y>
-         <width>51</width>
-         <height>21</height>
+         <x>460</x>
+         <y>180</y>
+         <width>61</width>
+         <height>31</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2933,6 +2918,54 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="text">
         <string>Hire</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="aquireOnMotgageButton">
+       <property name="geometry">
+        <rect>
+         <x>434</x>
+         <y>74</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(164, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Motgage</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buyAHouse">
+       <property name="geometry">
+        <rect>
+         <x>337</x>
+         <y>74</y>
+         <width>91</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(164, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>$20,000</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="rentAHouse">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>74</y>
+         <width>91</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(164, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Rent</string>
        </property>
       </widget>
      </widget>
@@ -3878,20 +3911,289 @@ color: black;</string>
         <string>Jobs</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_7">
+      <widget class="QWidget" name="widget_50" native="true">
        <property name="geometry">
         <rect>
-         <x>90</x>
-         <y>120</y>
-         <width>251</width>
-         <height>71</height>
+         <x>670</x>
+         <y>10</y>
+         <width>211</width>
+         <height>241</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font-size: 30px;</string>
+        <string notr="true">border-image: url(:/images/images/doctor.jpeg);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_51" native="true">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>10</y>
+         <width>211</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/policeOfficer.png);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_52" native="true">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>211</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/images/brickLaying.jpg);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_53" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>211</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:url(:/images/images/hardlabour.jpg)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>260</y>
+         <width>88</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: red;
+color: white;</string>
        </property>
        <property name="text">
-        <string>Comming Soon</string>
+        <string>Apply</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>290</y>
+         <width>211</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+background-color:  black;
+color:: white;
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;Work duration:        &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;1cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$100 /cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         $10/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	         -50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	         -50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;requirement:	         None&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>260</y>
+         <width>101</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: red;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Learn Skill</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>260</y>
+         <width>101</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: red;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Do job</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>290</y>
+         <width>211</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+background-color:  black;
+color:: white;
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;Work duration:        3 cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;wages: &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$300 /cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         $30/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	         -40/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	         -50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;training:	         2 cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;taining cost: 	         $200/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;requirement:	         BrickLaying&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>260</y>
+         <width>101</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: red;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>260</y>
+         <width>101</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: red;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Do Training</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>290</y>
+         <width>211</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+background-color:  black;
+color:: white;
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;Work duration:        6 &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$600 /cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         $50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	         -30/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	         -50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;requirement:	         Police Training&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>780</x>
+         <y>260</y>
+         <width>101</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: red;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>260</y>
+         <width>101</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: red;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>Get Cert</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>290</y>
+         <width>211</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+background-color:  black;
+color:: white;
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;Work duration:        &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;10 cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$1000 /cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         $90/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	         -20/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	         -50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;requirement:	         Medical Cert&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </widget>
@@ -4186,7 +4488,7 @@ color: rgb(85, 87, 83);
    <widget class="QLabel" name="goldStatLabel">
     <property name="geometry">
      <rect>
-      <x>1190</x>
+      <x>1230</x>
       <y>180</y>
       <width>67</width>
       <height>19</height>
@@ -4199,7 +4501,7 @@ color: rgb(85, 87, 83);
    <widget class="QLabel" name="bronzeStatLabel">
     <property name="geometry">
      <rect>
-      <x>1190</x>
+      <x>1230</x>
       <y>210</y>
       <width>67</width>
       <height>19</height>
@@ -4212,7 +4514,7 @@ color: rgb(85, 87, 83);
    <widget class="QLabel" name="crudeStatLabel">
     <property name="geometry">
      <rect>
-      <x>1190</x>
+      <x>1230</x>
       <y>240</y>
       <width>67</width>
       <height>19</height>
@@ -4225,7 +4527,7 @@ color: rgb(85, 87, 83);
    <widget class="QLabel" name="ironStatLabel">
     <property name="geometry">
      <rect>
-      <x>1190</x>
+      <x>1230</x>
       <y>270</y>
       <width>67</width>
       <height>19</height>
@@ -4238,7 +4540,7 @@ color: rgb(85, 87, 83);
    <widget class="QLabel" name="platinumStatLabel">
     <property name="geometry">
      <rect>
-      <x>1190</x>
+      <x>1230</x>
       <y>300</y>
       <width>67</width>
       <height>19</height>
@@ -4251,7 +4553,7 @@ color: rgb(85, 87, 83);
    <widget class="QLabel" name="silverStatLabel">
     <property name="geometry">
      <rect>
-      <x>1190</x>
+      <x>1230</x>
       <y>330</y>
       <width>67</width>
       <height>19</height>
@@ -4292,6 +4594,214 @@ color: rgb(85, 87, 83);
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Cantarell';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_49">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>570</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Brick Laying</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_50">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>630</y>
+      <width>121</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Medical Training</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="crudeStatLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>630</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="goldStatLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>570</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bronzeStatLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>600</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_51">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>600</y>
+      <width>111</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Policce Traning</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>530</y>
+      <width>104</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>SKILLS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_52">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>450</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Utilities</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ironStatLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>390</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>$ 150</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_53">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>390</y>
+      <width>101</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Income Tax</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="silverStatLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>450</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>$ 200</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_54">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>420</y>
+      <width>81</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Motgage</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="platinumStatLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>420</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>$ 300</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_7">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>360</y>
+      <width>104</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>Expenses</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_55">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>480</y>
+      <width>81</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vehicle Tax</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="silverStatLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>480</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>$ 100</string>
     </property>
    </widget>
   </widget>

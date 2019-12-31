@@ -8,13 +8,38 @@ Expenses::Expenses()
     lawyer = false;
     house = false;
     nurse = false;
+    renting = false;
+    mortgaging = false;
 
-    carCost = 200000.0;
-    thugSalary = 1000.0;
-    bodyGuardSalary = 5000.0;
-    lawyerSalary = 2000.0;
-    houseCost = 2000000.0;
-    nurseSalary = 10000.0;
+    carCost = 5000.0;
+    thugSalary = 100.0;
+    bodyGuardSalary = 200.0;
+    lawyerSalary = 300.0;
+    houseCost = 20000.0;
+    houseMotgageDownPayment = 5000.0;
+    motgageCyclePayment = 500.0;
+    nurseSalary = 250.0;
+    houseRent = 35.0;
+}
+
+bool Expenses::rentAHouse() {
+    house = true;
+    return renting = true;
+}
+
+bool Expenses::stopRentingHouse() {
+    house = false;
+    renting = false;
+    return true;
+}
+
+bool Expenses::initiateMortgageContract()
+{
+    houseCost += motgageCyclePayment;
+    houseCost -= houseMotgageDownPayment;
+    mortgaging = true;
+    return house = true;
+
 }
 
 double Expenses::getExpenses()  {
@@ -31,6 +56,13 @@ double Expenses::getExpenses()  {
     if(nurse) {
         expense += nurseSalary;
     }
+    if(renting) {
+        expense += houseRent;
+    }
+    if(mortgaging) {
+        expense += motgageCyclePayment;
+        houseCost -= motgageCyclePayment;
+    }
     return expense;
 }
 void Expenses::gameCycle(double rate) {
@@ -40,6 +72,56 @@ void Expenses::gameCycle(double rate) {
     lawyerSalary += (lawyerSalary * rate);
     houseCost += (houseCost * rate);
     nurseSalary += (nurseSalary * rate);
+}
+
+bool Expenses::getRenting() const
+{
+    return renting;
+}
+
+void Expenses::setRenting(bool value)
+{
+    renting = value;
+}
+
+double Expenses::getHouseRent() const
+{
+    return houseRent;
+}
+
+void Expenses::setHouseRent(double value)
+{
+    houseRent = value;
+}
+
+double Expenses::getHouseMotgageDownPayment() const
+{
+    return houseMotgageDownPayment;
+}
+
+void Expenses::setHouseMotgageDownPayment(double value)
+{
+    houseMotgageDownPayment = value;
+}
+
+double Expenses::getMotgageCyclePayment() const
+{
+    return motgageCyclePayment;
+}
+
+void Expenses::setMotgageCyclePayment(double value)
+{
+    motgageCyclePayment = value;
+}
+
+bool Expenses::getMortgaging() const
+{
+    return mortgaging;
+}
+
+void Expenses::setMortgaging(bool value)
+{
+    mortgaging = value;
 }
 bool Expenses::hireBodyGuard()
 {

@@ -13,15 +13,15 @@ Assets::Assets()
     bankOwned = 0;
 
 
-    houseCost = 5000.0;
-    refineryCost = 25000.0;
-    bankCost = 10000.0;
-    factoryCost = 15000.0;
+    houseCost = 19500.0;
+    refineryCost = 1300000.0;
+    bankCost = 500000.0;
+    factoryCost = 130000.0;
 
-    factoryIncome = 150.0;
-    houseIncome = 50.0;
-    refineryIncome = 250.0;
-    bankIncome = 100.0;
+    factoryIncome = 13000.0;
+    houseIncome = 1000.0;
+    refineryIncome = 150000.0;
+    bankIncome = 50000.0;
 
 
 }

@@ -24,6 +24,7 @@ SOURCES += \
     crime.cpp \
     expenses.cpp \
     grooming.cpp \
+    job.cpp \
     kitchen.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -41,6 +42,7 @@ HEADERS += \
     crime.h \
     expenses.h \
     grooming.h \
+    job.h \
     kitchen.h \
     mainwindow.h \
     player.h \

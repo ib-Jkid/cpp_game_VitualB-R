@@ -2,12 +2,12 @@
 
 Kitchen::Kitchen()
 {
-    riceCost = 50.0;
-    potatoCost = 50.0;
-    spagettiCost = 60.0;
-    beansCost = 70.0;
-    energyDrinkCost = 100.0;
-    carrotCost = 40.0;
+    riceCost = 1.5;
+    potatoCost = 1.0;
+    spagettiCost = 1.0;
+    beansCost = 2.0;
+    energyDrinkCost = 1.0;
+    carrotCost = 0.5;
 
     rice = 0;
     potato = 0;

@@ -2,10 +2,10 @@
 
 Clinic::Clinic()
 {
-    pillCost = 100.0;
-    injectionCost = 200.0;
-    hospitalBill = 2000.0;
-    checkupBill = 50.0;
+    pillCost = 4.0;
+    injectionCost = 6.0;
+    hospitalBill = 50.0;
+    checkupBill = 2.0;
 }
 
 void Clinic::gameCycle(double rate) {

@@ -19,6 +19,9 @@ public:
     bool dismissNurse(bool spent);
     bool hireThugs();
     bool hireNurse();
+    bool rentAHouse();
+    bool stopRentingHouse();
+    bool initiateMortgageContract();
 
     bool hasCar() const;
     void setCar(bool value);
@@ -58,6 +61,21 @@ public:
 
     void gameCycle(double rate);
 
+    bool getRenting() const;
+    void setRenting(bool value);
+
+    double getHouseRent() const;
+    void setHouseRent(double value);
+
+    double getHouseMotgageDownPayment() const;
+    void setHouseMotgageDownPayment(double value);
+
+    double getMotgageCyclePayment() const;
+    void setMotgageCyclePayment(double value);
+
+    bool getMortgaging() const;
+    void setMortgaging(bool value);
+
 private:
 
     bool car;
@@ -66,6 +84,8 @@ private:
     bool lawyer;
     bool house;
     bool nurse;
+    bool renting;
+    bool mortgaging;
 
     double carCost;
     double thugSalary;
@@ -73,6 +93,9 @@ private:
     double lawyerSalary;
     double houseCost;
     double nurseSalary;
+    double houseRent;
+    double houseMotgageDownPayment;
+    double motgageCyclePayment;
 };
 
 #endif // EXPENSES_H

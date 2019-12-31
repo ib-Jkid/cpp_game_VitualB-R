@@ -2,10 +2,10 @@
 
 Grooming::Grooming()
 {
-    bathCost = 10.0;
-    laundryCost = 20.0;
-    washHandCost = 1.0;
-    brushCost = 5.0;
+    bathCost = 1.0;
+    laundryCost = 3.0;
+    washHandCost = 0.1;
+    brushCost = 0.5;
 }
 void Grooming::gameCycle(double rate) {
     bathCost += (bathCost * rate);
