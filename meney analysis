@@ -1,14 +1,20 @@
-doctor salary: $1000/cycle
+doctor salary: $1200/cycle
 cert cost: $25/cycle
 training period: 60 cycle;
+workcycle = 10;
 
 police salary: $300/cycle
-training cost: $10/cycle
-training period: 12 cycle
+training cost: $15/cycle
+training period: 30 cycle
+workcycle = 6;
 
 bricklayer salary: $100/cycle;
-training cost: $4/cycle;
-trainig period: 6 cycle;
+training cost: $5/cycle;
+trainig period: 20 cycle;
+workcycle = 3;
+
+labourer work cycle = 1;
+salary = $50/cycle
 
 #FOOD
 Rice: $1.5

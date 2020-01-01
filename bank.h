@@ -16,6 +16,7 @@ public:
     bool withdraw(double amount);
     bool processLoan(double amount, double limit);
     bool payDept();
+    bool recieveEarnings(double salary);
 
     double getMoneyAtHand() const;
     void setMoneyAtHand(double value);

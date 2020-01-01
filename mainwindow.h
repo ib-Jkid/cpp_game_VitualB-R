@@ -13,6 +13,7 @@
 #include "clinic.h"
 #include "grooming.h"
 #include "back.h"
+#include "job.h"
 
 
 #include <QMainWindow>
@@ -49,6 +50,7 @@ public:
     Grooming grooming;
     QMutex mute;
     Back back;
+    Job job;
 
 
 
@@ -189,8 +191,23 @@ private slots:
 
     void on_aquireOnMotgageButton_clicked();
 
+    void on_applyingLabourerJob_clicked();
+
+    void on_learnBricklayerJob_clicked();
+
+    void on_applyBrickLayerJob_clicked();
+
+    void on_startPoliceOfficerTraining_clicked();
+
+    void on_applyPoliceOfficerJob_clicked();
+
+    void on_startDoctorsTraining_clicked();
+
+    void on_applyDoctorsJob_clicked();
+
 signals:
     void on_stop();
+    void tutionFeePaid(bool paid);
 private:
     Ui::MainWindow *ui;
     void updateNoticeBoard(QString info,bool tips);
@@ -205,6 +222,7 @@ private:
     void updateClinicUi();
     void updateGroomingUi();
     void updateStockBoard();
+    void updateJobUi();
     bool doAction(int value);
 
     void getRobbed();
@@ -218,6 +236,9 @@ private:
     void wronglyAccused();
     void attacked();
     void runGameCycle();
+
+    void payTutionFee(double fee);
+    void paySalary(double salary);
 
 
 

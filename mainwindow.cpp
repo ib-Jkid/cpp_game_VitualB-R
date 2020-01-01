@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-     updateUi();
+    updateUi();
     connect(&back,&Back::on_updateNoticeBoard,this,&MainWindow::updateNoticeBoard);
     connect(&back,&Back::on_getRobbed,this,&MainWindow::getRobbed);
     connect(&back,&Back::on_getSued,this,&MainWindow::getSued);
@@ -25,10 +25,14 @@ MainWindow::MainWindow(QWidget *parent)
     connect(this,&MainWindow::on_stop,&back,&Back::stop);
     QFuture<void> test = QtConcurrent::run(&this->back,&Back::loop);
 
+    connect(&job,&Job::on_payTuitionFee,this,&MainWindow::payTutionFee);
+    connect(this,&MainWindow::tutionFeePaid,&job,&Job::tutionFeePaid);
+    connect(&job,&Job::on_paySalary,this,&MainWindow::paySalary);
 
 
 
- }
+
+}
 
 
 
@@ -41,6 +45,15 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::runGameCycle() {
+
+    job.gameCycle();
+    if(job.isWorking()) {
+        player.setEnergy(player.getEnergy() - 50);
+        if(job.getWorkingAsDoctor()) player.setHealthStatus(player.getHealthStatus() - 20);
+        if(job.getWorkingAslabourer()) player.setHealthStatus(player.getHealthStatus() - 50);
+        if(job.getWorkingAsBrickLayer()) player.setHealthStatus(player.getHealthStatus() - 40);
+        if(job.getWorkingAsPoliceOfficer()) player.setHealthStatus(player.getHealthStatus() - 30);
+    }
     bank.loose(expenses.getExpenses());
     assets.gameCycle(0.01);
     bank.gameCycle(0.01);
@@ -53,14 +66,14 @@ void MainWindow::runGameCycle() {
 
     if(player.isDead()) {
         QMessageBox::critical(this,"Game Over","you died!!");
-         emit on_stop();
+        emit on_stop();
         qDebug() << "game Over" ;
 
         return ;
     }
     if((assets.getTotalAssetWorth() + bank.getFinancialSummary() + stock.getStockWorth()) < 0){
         QMessageBox::critical(this,"Game Over","You are broke");
-         emit on_stop();
+        emit on_stop();
 
         return ;
     }
@@ -71,9 +84,31 @@ void MainWindow::runGameCycle() {
 
 
     }
- qDebug() << assets.getTotalAssetWorth() + bank.getFinancialSummary() + stock.getStockWorth() ;
+    qDebug() << assets.getTotalAssetWorth() + bank.getFinancialSummary() + stock.getStockWorth() ;
 
 }
+
+void MainWindow::payTutionFee(double fee)
+{
+    if((bank.getMoneyAtHand() + bank.getAccountBalance()) > fee) {
+        if(bank.loose(fee)) {
+            emit tutionFeePaid(true);
+        }else {
+            emit tutionFeePaid(false);
+        }
+    }else {
+        emit tutionFeePaid(false);
+    }
+}
+
+void MainWindow::paySalary(double salary)
+{
+    if(bank.recieveEarnings(salary)) {
+        updateNoticeBoard("Salary of $" + QString::number(salary)+ "has been recieved",false);
+    }
+}
+
+
 void MainWindow::notify(QString title, QString msg)
 {
     QString color[] = {"red", "blue", "brown","white"};
@@ -118,13 +153,13 @@ void MainWindow::getRobbed() {
 void MainWindow::getSued() {
     int value = 0;
     if(expenses.hasLawyer()) {
-        value += 3;
+        value += 4;
     }
     if(doAction(value)) {
-        bank.loose(5000.0);
-        notify("LAW SUIT","You lost $5000 hire a lawyer to win cases");
+        bank.loose(bank.getAccountBalance() /2);
+        notify("LAW SUIT","You lost $"+QString::number(bank.getAccountBalance() /2)+" hire a lawyer to win cases");
     }else{
-        bank.earn(1000.0);
+        bank.earn(100.0);
         notify("LAW SUIT","You won $1000 in a law suit");
     }
 }
@@ -170,8 +205,8 @@ void MainWindow::carCrash() {
 }
 
 void MainWindow::dupped() {
-    bank.loose(10000);
-    notify("DUPPED","You get dupped by your business associates and lost $10,000");
+    bank.loose(50);
+    notify("DUPPED","You get dupped by your business associates and lost $50");
 }
 
 void MainWindow::foodPoison() {
@@ -251,7 +286,7 @@ void MainWindow::on_kitchenPageButton_clicked()
 
 void MainWindow::on_stockPageButton_clicked()
 {
- ui->stackedWidget->setCurrentWidget(ui->stockPage);
+    ui->stackedWidget->setCurrentWidget(ui->stockPage);
 }
 
 void MainWindow::on_clinicPageButton_clicked()
@@ -290,6 +325,76 @@ void MainWindow::updateStockBoard() {
     ui->crudeStatLabel->setText("$" + QString::number(stock.getCrudePrice()-stock.getCrudeInitial()));
     ui->bronzeStatLabel->setText("$" + QString::number(stock.getBronzePrice()-stock.getBronzeInitial()));
     ui->platinumStatLabel->setText("$" + QString::number(stock.getPlatinumPrice()-stock.getPlatinumInitial()));
+}
+
+void MainWindow::updateJobUi()
+{
+    if(job.getLearningDoctor()){
+        ui->startDoctorsTraining->setText("Studying");
+    }else if(job.getDoctorSkillProgress() >= 100){
+        ui->startDoctorsTraining->setText("Certified");
+        ui->startDoctorsTraining->setDisabled(true);
+    }else{
+        ui->startDoctorsTraining->setText("Get Cert");
+    }
+
+    if(job.getApplyingDoctorJob()) {
+        ui->applyDoctorsJob->setText("Applying");
+    }else if(job.getWorkingAsDoctor()) {
+        ui->applyDoctorsJob->setText("Working");
+    }else {
+        ui->applyDoctorsJob->setText("Apply");
+    }
+
+
+    if(job.getLearningPoliceOfficer())
+    {
+        ui->startPoliceOfficerTraining->setText("Training");
+    }else if(job.getPoliceOfficerSkillProgress() >= 100){
+        ui->startPoliceOfficerTraining->setText("Trained");
+        ui->startPoliceOfficerTraining->setDisabled(true);
+    }else{
+        ui->startPoliceOfficerTraining->setText("Do Training");
+    }
+
+    if(job.getApplyingPoliceOfficer()) {
+        ui->applyPoliceOfficerJob->setText("Applying");
+    }else if(job.getWorkingAsPoliceOfficer()) {
+        ui->applyPoliceOfficerJob->setText("Working");
+    }else {
+        ui->applyPoliceOfficerJob->setText("Apply");
+    }
+
+    if(job.getLearningBrickLaying())
+    {
+        ui->learnBricklayerJob->setText("learning");
+
+    }else if(job.getBrickLayingSkillProgress() >= 100){
+        ui->learnBricklayerJob->setText("learnt");
+        ui->learnBricklayerJob->setDisabled(true);
+    }else{
+        ui->learnBricklayerJob->setText("learn");
+    }
+
+    if(job.getApplyingBrickLaying()) {
+        ui->applyBrickLayerJob->setText("Applying");
+    }else if(job.getWorkingAsBrickLayer()) {
+        ui->applyBrickLayerJob->setText("Working");
+    }else {
+         ui->applyBrickLayerJob->setText("Apply");
+    }
+
+
+    if(job.getApplyingLabourer()){
+        ui->applyingLabourerJob->setText("Applying");
+    }else if(job.getWorkingAslabourer()){
+        ui->applyingLabourerJob->setText("Working");
+    }else {
+        ui->applyingLabourerJob->setText("Apply");
+    }
+    ui->brickLayingProgress->setText(QString::number(job.getBrickLayingSkillProgress()) + "%");
+    ui->policeTrainingProgress->setText(QString::number(job.getPoliceOfficerSkillProgress()) + "%");
+    ui->medicalTrainingProgress->setText(QString::number(job.getDoctorSkillProgress()) + "%");
 }
 
 void MainWindow::updateGroomingUi() {
@@ -371,7 +476,7 @@ void MainWindow::updateCrimeUi() {
     ui->theftSuccessRate->setText(QString::number(crime.getTheftChance())+"%");
     ui->bankFraudSuccessRate->setText(QString::number(crime.getBankChance())+"%");
     if(player.isFree()) {
-       ui->freedomStatus->setText("FREE");
+        ui->freedomStatus->setText("FREE");
     }else {
         ui->freedomStatus->setText("ARRESTED");
     }
@@ -463,6 +568,7 @@ void MainWindow::updateUi()
     updateClinicUi();
     updateStockBoard();
     updateGroomingUi();
+    updateJobUi();
 
 }
 
@@ -479,7 +585,7 @@ void MainWindow::doWork()
         bank.setMoneyAtHand(bank.getMoneyAtHand() + 1);
         updateUi();
         std::cout << "theade";
-       QThread::currentThread()->sleep(100);
+        QThread::currentThread()->sleep(100);
     }while(true);
 
 
@@ -607,8 +713,8 @@ void MainWindow::on_factoryBuyButton_clicked()
     }else {
         updateNoticeBoard("Your Asset Purchased Failed, please ensure you have sufficient cash");
     }
-updateAssetsUi();
-updateBankUi();
+    updateAssetsUi();
+    updateBankUi();
 
 }
 
@@ -699,9 +805,9 @@ void MainWindow::on_BankSellButton_clicked()
 void MainWindow::on_collectIncomeButton_clicked()
 {
     if(bank.earn(assets.collectIncome())) {
-            updateNoticeBoard("Income Collected");
+        updateNoticeBoard("Income Collected");
     }else {
-          updateNoticeBoard("Failed!! no income to collect");
+        updateNoticeBoard("Failed!! no income to collect");
     }
     updateAssetsUi();
     updateBankUi();
@@ -911,7 +1017,7 @@ void MainWindow::on_energyDrink_clicked()
     }
     updateKitchenUi();
     updateBankUi();
-     updateProgressUi();
+    updateProgressUi();
 }
 
 void MainWindow::on_consumeBeans_clicked()
@@ -935,7 +1041,7 @@ void MainWindow::on_consumeSpagetti_clicked()
     }
     updateKitchenUi();
     updateBankUi();
-     updateProgressUi();
+    updateProgressUi();
 }
 
 void MainWindow::on_consumeRice_clicked()
@@ -947,16 +1053,16 @@ void MainWindow::on_consumeRice_clicked()
     }
     updateKitchenUi();
     updateBankUi();
-     updateProgressUi();
+    updateProgressUi();
 }
 
 
 void MainWindow::on_goldBuyButton_clicked()
 {
     if(stock.buyGold(bank.spend(stock.getGoldPrice()))) {
-         updateNoticeBoard("You have bought into the gold market");
+        updateNoticeBoard("You have bought into the gold market");
     }else {
-         updateNoticeBoard("You do not have enough cash");
+        updateNoticeBoard("You do not have enough cash");
     }
     updateStockUi();
     updateBankUi();
@@ -969,16 +1075,16 @@ void MainWindow::on_goldSellButton_clicked()
     }else {
         updateNoticeBoard("you have no gold to sell");
     }
-   updateStockUi();
-   updateBankUi();
+    updateStockUi();
+    updateBankUi();
 }
 
 void MainWindow::on_bronzeBuyButton_clicked()
 {
     if(stock.buyBronze(bank.spend(stock.getBronzePrice()))) {
-         updateNoticeBoard("You have bought into the bronze market");
+        updateNoticeBoard("You have bought into the bronze market");
     }else {
-         updateNoticeBoard("You do not have enough cash");
+        updateNoticeBoard("You do not have enough cash");
     }
     updateStockUi();
     updateBankUi();
@@ -991,16 +1097,16 @@ void MainWindow::on_bronzeSellButton_clicked()
     }else {
         updateNoticeBoard("you have no bronze to sell");
     }
-   updateStockUi();
-   updateBankUi();
+    updateStockUi();
+    updateBankUi();
 }
 
 void MainWindow::on_oilBuyButton_clicked()
 {
     if(stock.buyCrude(bank.spend(stock.getCrudePrice()))) {
-         updateNoticeBoard("You have bought into the oil market");
+        updateNoticeBoard("You have bought into the oil market");
     }else {
-         updateNoticeBoard("You do not have enough cash");
+        updateNoticeBoard("You do not have enough cash");
     }
     updateStockUi();
 }
@@ -1019,9 +1125,9 @@ void MainWindow::on_oilSellButton_clicked()
 void MainWindow::on_ironBuyButton_clicked()
 {
     if(stock.buyIron(bank.spend(stock.getIronPrice()))) {
-         updateNoticeBoard("You have bought into the iron market");
+        updateNoticeBoard("You have bought into the iron market");
     }else {
-         updateNoticeBoard("You do not have enough cash");
+        updateNoticeBoard("You do not have enough cash");
     }
     updateStockUi();
     updateBankUi();
@@ -1041,9 +1147,9 @@ void MainWindow::on_ironSellButton_clicked()
 void MainWindow::on_platinumBuyButton_clicked()
 {
     if(stock.buyPlatinum(bank.spend(stock.getPlatinumPrice()))) {
-         updateNoticeBoard("You have bought into the platinium market");
+        updateNoticeBoard("You have bought into the platinium market");
     }else {
-         updateNoticeBoard("You do not have enough cash");
+        updateNoticeBoard("You do not have enough cash");
     }
     updateStockUi();
     updateBankUi();
@@ -1056,16 +1162,16 @@ void MainWindow::on_platinumSellButton_clicked()
     }else {
         updateNoticeBoard("you have no iron to sell");
     }
-   updateStockUi();
-   updateBankUi();
+    updateStockUi();
+    updateBankUi();
 }
 
 void MainWindow::on_silverBuyButton_clicked()
 {
     if(stock.buySilver(bank.spend(stock.getSilverPrice()))) {
-         updateNoticeBoard("You have bought into the silver market");
+        updateNoticeBoard("You have bought into the silver market");
     }else {
-         updateNoticeBoard("You do not have enough cash");
+        updateNoticeBoard("You do not have enough cash");
     }
     updateStockUi();
     updateBankUi();
@@ -1085,9 +1191,9 @@ void MainWindow::on_silverSellButton_clicked()
 void MainWindow::on_takeAPillButton_clicked()
 {
     if(player.takePill(clinic.buyPill(bank.spend(clinic.getPillCost())))) {
-         updateNoticeBoard("You just took a pill hope you get better soon");
+        updateNoticeBoard("You just took a pill hope you get better soon");
     }else {
-         updateNoticeBoard("You need money to take treatment");
+        updateNoticeBoard("You need money to take treatment");
     }
     updateBankUi();
     updateClinicUi();
@@ -1097,9 +1203,9 @@ void MainWindow::on_takeAPillButton_clicked()
 void MainWindow::on_takeAShotButton_clicked()
 {
     if(player.takeInjection(clinic.buyInjection(bank.spend(clinic.getInjectionCost())))) {
-         updateNoticeBoard("You just took a shot hope you get better soon");
+        updateNoticeBoard("You just took a shot hope you get better soon");
     }else {
-         updateNoticeBoard("You need money to take treatment");
+        updateNoticeBoard("You need money to take treatment");
     }
     updateBankUi();
     updateClinicUi();
@@ -1110,12 +1216,12 @@ void MainWindow::on_payHospitalBillButton_clicked()
 {
     if(player.isSick()) {
         if(player.hospitalDischarge(clinic.payHospitalBill(bank.spend(clinic.getHospitalBill())))) {
-             updateNoticeBoard("You have been discharged");
+            updateNoticeBoard("You have been discharged");
         }else {
-             updateNoticeBoard("You need money to take treatment");
+            updateNoticeBoard("You need money to take treatment");
         }
     }else {
-         updateNoticeBoard("You are not sick");
+        updateNoticeBoard("You are not sick");
     }
 
     updateBankUi();
@@ -1126,9 +1232,9 @@ void MainWindow::on_payHospitalBillButton_clicked()
 void MainWindow::on_doCheckupButton_clicked()
 {
     if(player.doCheckUp(clinic.payCheckup(bank.spend(clinic.getCheckupBill())))) {
-         updateNoticeBoard("You did a medical checkup please keep it up");
+        updateNoticeBoard("You did a medical checkup please keep it up");
     }else {
-         updateNoticeBoard("You need money to take treatment");
+        updateNoticeBoard("You need money to take treatment");
     }
     updateBankUi();
     updateClinicUi();
@@ -1139,13 +1245,13 @@ void MainWindow::on_HireANurseButton_clicked()
 {
     if(expenses.hasNurse()) {
         if(expenses.dismissNurse(bank.spend(expenses.getNurseSalary()))) {
-             updateNoticeBoard("You have fired your nurse");
+            updateNoticeBoard("You have fired your nurse");
         }else {
-             updateNoticeBoard("You will need to payoff your nurse");
+            updateNoticeBoard("You will need to payoff your nurse");
         }
     }else {
         if(expenses.hireNurse()) {
-             updateNoticeBoard("You have hired a nurse");
+            updateNoticeBoard("You have hired a nurse");
         }
     }
     updateBankUi();
@@ -1211,7 +1317,7 @@ void MainWindow::on_collectSchoolLoanButton_clicked()
             updateNoticeBoard("You have collected a credit worth $"+QString::number(bank.getSchoolLoan()));
         }
     }else {
-         updateNoticeBoard("You have outstanding credit dept of $"+QString::number(bank.getSchoolLoan()) );
+        updateNoticeBoard("You have outstanding credit dept of $"+QString::number(bank.getSchoolLoan()) );
     }
     updateBankUi();
 }
@@ -1242,7 +1348,7 @@ void MainWindow::on_aquireOnMotgageButton_clicked()
     if(expenses.getMortgaging()) {
         updateNoticeBoard("You are already in a mortgage contract with the buyer");
     }else if(expenses.getRenting()) {
-         updateNoticeBoard("You are renting this house please terminate that contract before initiating another");
+        updateNoticeBoard("You are renting this house please terminate that contract before initiating another");
     }else {
         if(bank.spend(expenses.getHouseMotgageDownPayment())){
             if(expenses.initiateMortgageContract()) {
@@ -1258,4 +1364,89 @@ void MainWindow::on_aquireOnMotgageButton_clicked()
     }
     updateExpensesUi();
     updateBankUi();
+}
+
+void MainWindow::on_applyingLabourerJob_clicked()
+{
+    if(job.applyLabouringJob()) {
+        updateNoticeBoard("you application has been noted you will get a job soon");
+    }else if(job.cancelLabouringJobApplication()) {
+        updateNoticeBoard("you have cancelled your application");
+    }else {
+        updateNoticeBoard("You can't Perfom multile Job at same time");
+    }
+    updateJobUi();
+}
+
+void MainWindow::on_learnBricklayerJob_clicked()
+{
+
+    if(job.startBrickLayingTraining()) {
+        updateNoticeBoard("you have started you training on brick laying");
+    }else if(job.stopBrickLayingTraining()) {
+        updateNoticeBoard("you have stoped you training on brick laying");
+    }else {
+        updateNoticeBoard("Training failed to start, make sure you are not doing any other job");
+    }
+    updateJobUi();
+}
+
+void MainWindow::on_applyBrickLayerJob_clicked()
+{
+    if(job.applyBrickLayingJob()) {
+        updateNoticeBoard("Your Application is pending");
+    }else if(job.cancelBrickLayingJobApplication()) {
+        updateNoticeBoard("you have cancelled your application");
+    }else {
+        updateNoticeBoard("You cant Perfome multible jobs at same time");
+    }
+    updateJobUi();
+}
+
+void MainWindow::on_startPoliceOfficerTraining_clicked()
+{
+    if(job.startPoliceTraining()) {
+        updateNoticeBoard("you have started your training in the police Academy");
+    }else if(job.stopPoliceTraining()) {
+        updateNoticeBoard("you have abscornded from the police academy");
+    }else {
+        updateNoticeBoard("Training failed to start, make sure you are not doing any other job");
+    }
+    updateJobUi();
+}
+
+void MainWindow::on_applyPoliceOfficerJob_clicked()
+{
+    if(job.applyPoliceJob()) {
+        updateNoticeBoard("Your Application is pending");
+    }else if(job.cancelPoliceJobApplication()) {
+        updateNoticeBoard("you have cancelled your application");
+    }else {
+        updateNoticeBoard("You cant Perfome multible jobs at same time");
+    }
+    updateJobUi();
+}
+
+void MainWindow::on_startDoctorsTraining_clicked()
+{
+    if(job.startDoctorsTraining()) {
+        updateNoticeBoard("you have started your training in the Medical College");
+    }else if(job.stopDoctorsTraining()) {
+        updateNoticeBoard("you withdrew from college");
+    }else {
+        updateNoticeBoard("Training failed to start, make sure you are not doing any other job");
+    }
+    updateJobUi();
+}
+
+void MainWindow::on_applyDoctorsJob_clicked()
+{
+    if(job.applyDoctorJob()) {
+        updateNoticeBoard("Your Application is pending");
+    }else if(job.cancelDoctorJobApplication()) {
+        updateNoticeBoard("you have cancelled your application");
+    }else {
+        updateNoticeBoard("You cant Perfome multible jobs at same time");
+    }
+    updateJobUi();
 }

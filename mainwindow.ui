@@ -220,7 +220,7 @@ font-weight: bold;</string>
       <string notr="true">background-color:  white;</string>
      </property>
      <property name="currentIndex">
-      <number>7</number>
+      <number>11</number>
      </property>
      <widget class="QWidget" name="homePage"/>
      <widget class="QWidget" name="bankPage">
@@ -3963,7 +3963,7 @@ color: black;</string>
         <string notr="true">border-image:url(:/images/images/hardlabour.jpg)</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="applyingLabourerJob">
        <property name="geometry">
         <rect>
          <x>70</x>
@@ -4001,14 +4001,14 @@ color:: white;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;Work duration:        &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;1cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$100 /cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         $10/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$50 /cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         %10&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	         -50/cycle&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	         -50/cycle&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;requirement:	         None&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_5">
+      <widget class="QPushButton" name="learnBricklayerJob">
        <property name="geometry">
         <rect>
          <x>230</x>
@@ -4025,7 +4025,7 @@ color: white;</string>
         <string>Learn Skill</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="applyBrickLayerJob">
        <property name="geometry">
         <rect>
          <x>340</x>
@@ -4039,7 +4039,7 @@ color: white;</string>
 color: white;</string>
        </property>
        <property name="text">
-        <string>Do job</string>
+        <string>Apply</string>
        </property>
       </widget>
       <widget class="QTextEdit" name="textEdit_7">
@@ -4063,16 +4063,16 @@ color:: white;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;Work duration:        3 cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;wages: &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$300 /cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         $30/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;wages: &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$100 /cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         10%&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	         -40/cycle&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	         -50/cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;training:	         2 cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;taining cost: 	         $200/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;training:	         20 cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;training cost: 	         $5/cycle&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;requirement:	         BrickLaying&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="applyPoliceOfficerJob">
        <property name="geometry">
         <rect>
          <x>560</x>
@@ -4089,7 +4089,7 @@ color: white;</string>
         <string>Apply</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="startPoliceOfficerTraining">
        <property name="geometry">
         <rect>
          <x>450</x>
@@ -4127,14 +4127,16 @@ color:: white;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;Work duration:        6 &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$600 /cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         $50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$300 /cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         10%&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	         -30/cycle&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	         -50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;training:	         30 cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;training cost: 	         $15/cycle&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;requirement:	         Police Training&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_9">
+      <widget class="QPushButton" name="applyDoctorsJob">
        <property name="geometry">
         <rect>
          <x>780</x>
@@ -4151,7 +4153,7 @@ color: white;</string>
         <string>Apply</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="startDoctorsTraining">
        <property name="geometry">
         <rect>
          <x>670</x>
@@ -4188,11 +4190,13 @@ color:: white;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;Work duration:        &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;10 cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	           &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$1000 /cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	         $90/cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	         -20/cycle&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	         -50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;Work duration:       &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;10 cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt; font-weight:600;&quot;&gt;wages: 	          &lt;/span&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;$1200 /cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;tax:	        10%&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;health: 	        -20/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;energy:	        -50/cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;training period:      60 cycle&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;training cost: 	         $25/cycle&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Cantarell'; font-size:10pt;&quot;&gt;requirement:	         Medical Cert&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
@@ -4622,7 +4626,7 @@ p, li { white-space: pre-wrap; }
      <string>Medical Training</string>
     </property>
    </widget>
-   <widget class="QLabel" name="crudeStatLabel_2">
+   <widget class="QLabel" name="medicalTrainingProgress">
     <property name="geometry">
      <rect>
       <x>1230</x>
@@ -4635,7 +4639,7 @@ p, li { white-space: pre-wrap; }
      <string>100%</string>
     </property>
    </widget>
-   <widget class="QLabel" name="goldStatLabel_2">
+   <widget class="QLabel" name="brickLayingProgress">
     <property name="geometry">
      <rect>
       <x>1230</x>
@@ -4648,7 +4652,7 @@ p, li { white-space: pre-wrap; }
      <string>100%</string>
     </property>
    </widget>
-   <widget class="QLabel" name="bronzeStatLabel_2">
+   <widget class="QLabel" name="policeTrainingProgress">
     <property name="geometry">
      <rect>
       <x>1230</x>
@@ -4671,7 +4675,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>Policce Traning</string>
+     <string>Police Traning</string>
     </property>
    </widget>
    <widget class="QPlainTextEdit" name="plainTextEdit_6">

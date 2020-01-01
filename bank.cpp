@@ -2,7 +2,7 @@
 
 Bank::Bank()
 {
-    accountBalance = 0.0;
+    accountBalance = 100.0;
     dept = 0.0;
     moneyAtHand = 100.0;
     charges = 1.0;
@@ -147,6 +147,12 @@ bool Bank::payDept()
         return true;
     }
     return false;
+}
+
+bool Bank::recieveEarnings(double salary)
+{
+    accountBalance += (salary - (salary * 10 / 100) );
+    return true;
 }
 
 double Bank::getMoneyAtHand() const

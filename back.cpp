@@ -16,12 +16,12 @@ void Back::loop()
         QThread::currentThread()->sleep(10);
         emit on_updateNoticeBoard(tips.getTips(),true);
         QThread::currentThread()->sleep(10);
-        emit on_updateNoticeBoard(tips.getTips(),true);
+       // emit on_updateNoticeBoard(tips.getTips(),true);
         runChance();
         QThread::currentThread()->sleep(10);
         emit on_updateNoticeBoard(tips.getTips(),true);
         QThread::currentThread()->sleep(10);
-        emit on_updateNoticeBoard(tips.getTips(),true);
+        //emit on_updateNoticeBoard(tips.getTips(),true);
         runGameCycle();
     }
 }
