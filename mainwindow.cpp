@@ -51,7 +51,6 @@ double MainWindow::getCalculatedNetWorth() {
 }
 
 void MainWindow::runGameCycle() {
-
     job.gameCycle();
     if(job.isWorking()) {
         player.setEnergy(player.getEnergy() - 50);
@@ -118,8 +117,8 @@ void MainWindow::paySalary(double salary)
 void MainWindow::notify(QString title, QString msg)
 {
     QString color[] = {"red", "blue", "brown","white"};
-    int i = rand() % 5;
-    ui->gameUpdateBoard->setHtml("<b>"+title+":</b>"+"<font color='"+color[i]+"'> "+ msg + "</font>");
+    int i = rand() % 4;
+    ui->gameUpdateBoard->setHtml(title+":</b>"+"<font color='"+color[i]+"'> "+ msg + "</font>");
 }
 bool MainWindow::doAction(int value) {
     int ran = rand()% 5+1;

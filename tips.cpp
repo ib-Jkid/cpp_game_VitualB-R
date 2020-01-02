@@ -1,4 +1,5 @@
 #include "tips.h"
+#include <QDebug>
 
 Tips::Tips()
 {
@@ -13,15 +14,16 @@ Tips::Tips()
         "hiring of body guard can be usefull but ensure \nyour income is stable enough to pay them",
         "Commodites can only be purchased with cash at hand but beware of robbers",
         "After every game cycle, you networth is recalculated",
-        "you win the came when you attain a networth of $1,000,000"
+        "you win the game when you attain a networth of $1,000,000"
     };
 }
 
 QString Tips::getTips()
 {
-    tipNum++;
-    if(tipNum == tips.length()) {
-        tipNum = 0;
-    }
-    return tips[tipNum];
+//    tipNum++;
+//    if(tipNum == tips.length()) {
+//        tipNum = 0;
+//    }
+//    qDebug() << tips.length();
+    return tips[0];
 }

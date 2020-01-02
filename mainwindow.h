@@ -36,7 +36,6 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void notify(QString title,QString msg);
-    void updateUi();
     void doSetup(QThread &thread);
     Bank bank;
     Assets assets;
@@ -204,13 +203,28 @@ private slots:
     void on_startDoctorsTraining_clicked();
 
     void on_applyDoctorsJob_clicked();
-
+public slots:
+    void updateNoticeBoard(QString info,bool tips);
+    void getRobbed();
+    void getSued();
+    void riseStock();
+    void fallStock();
+    void heartAttack();
+    void carCrash();
+    void dupped();
+    void foodPoison();
+    void wronglyAccused();
+    void attacked();
+    void runGameCycle();
+    void updateUi();
+    void payTutionFee(double fee);
+    void paySalary(double salary);
 signals:
     void on_stop();
     void tutionFeePaid(bool paid);
 private:
     Ui::MainWindow *ui;
-    void updateNoticeBoard(QString info,bool tips);
+
     void updateStockUi();
     void updateBankUi();
     void updateProgressUi();
@@ -225,23 +239,16 @@ private:
     void updateJobUi();
     bool doAction(int value);
 
-    void getRobbed();
-    void getSued();
-    void riseStock();
-    void fallStock();
-    void heartAttack();
-    void carCrash();
-    void dupped();
-    void foodPoison();
-    void wronglyAccused();
-    void attacked();
-    void runGameCycle();
 
-    void payTutionFee(double fee);
-    void paySalary(double salary);
+
+
     void updateIncomeStatementUi();
 
     double getCalculatedNetWorth();
+
+
+
+
 
 
 
