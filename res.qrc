@@ -46,6 +46,10 @@
         <file>images/doctor.jpeg</file>
         <file>images/policeOfficer.png</file>
         <file>images/hardlabour.jpg</file>
+        <file>images/table.jpg</file>
+        <file>images/bankingHall.jpg</file>
+        <file>images/bathroom.jpg</file>
+        <file>images/hospitalWard.jpg</file>
     </qresource>
     <qresource prefix="/">
         <file>images/bank.jpeg</file>
