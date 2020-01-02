@@ -32,8 +32,8 @@ Job::Job(QObject *parent) : QObject(parent)
     policeOfficerTuitionFee = 15.0;
     doctorTuitionFee = 25.0;
 
-    brickLayingSkillProgress = 100;
-    policeOfficerSkillProgress = 100;
+    brickLayingSkillProgress = 0;
+    policeOfficerSkillProgress = 0;
     doctorSkillProgress = 0;
 
     labourerSalary = 50.0;
@@ -156,8 +156,8 @@ bool Job::startDoctorsTraining()
     if(isWorking()) {
         return false;
     }
-        reset();
-       return  learningDoctor = true;
+    reset();
+    return  learningDoctor = true;
 }
 
 bool Job::startBrickLayingTraining()
@@ -195,18 +195,24 @@ bool Job::applyPoliceJob()
 {
     if(isWorking()) {
         return false;
+    }else if(policeOfficerSkillProgress >= 100) {
+        reset();
+        return applyingPoliceOfficer = true;
     }
-    reset();
-    return applyingPoliceOfficer = true;
+    return false;
+
 }
 
 bool Job::applyDoctorJob()
 {
     if(isWorking()) {
         return false;
+    }else if(doctorSkillProgress >= 100) {
+        reset();
+        return applyingDoctorJob = true;
     }
-    reset();
-    return applyingDoctorJob = true;
+    return false;
+
 }
 
 bool Job::cancelLabouringJobApplication()
