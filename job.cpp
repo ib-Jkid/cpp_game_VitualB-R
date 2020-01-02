@@ -111,6 +111,18 @@ void Job::gameCycle()
     }
 }
 
+double Job::getCurrentIncome()
+{
+    if(isWorking()) {
+        if(workingAsDoctor)return doctorSalary;
+        if(workingAslabourer)return labourerSalary;
+        if(workingAsBrickLayer)return brickLayingSalary;
+        if(workingAsPoliceOfficer)return policeOfficerSalary;
+        return 0.0;
+    }
+    return 0.0;
+}
+
 void Job::tutionFeePaid(bool paid)
 {
 

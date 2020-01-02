@@ -220,7 +220,7 @@ font-weight: bold;</string>
       <string notr="true">background-color:  white;</string>
      </property>
      <property name="currentIndex">
-      <number>11</number>
+      <number>10</number>
      </property>
      <widget class="QWidget" name="homePage"/>
      <widget class="QWidget" name="bankPage">
@@ -4250,6 +4250,19 @@ p, li { white-space: pre-wrap; }
       </widget>
      </widget>
     </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>0</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cash At Hand:</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QTextEdit" name="noticeBoard">
     <property name="geometry">
@@ -4422,7 +4435,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>180</y>
+      <y>170</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4435,7 +4448,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>210</y>
+      <y>200</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4448,7 +4461,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>240</y>
+      <y>230</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4461,7 +4474,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>270</y>
+      <y>260</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4474,7 +4487,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>300</y>
+      <y>290</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4487,7 +4500,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>330</y>
+      <y>320</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4500,7 +4513,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1160</x>
-      <y>150</y>
+      <y>140</y>
       <width>104</width>
       <height>31</height>
      </rect>
@@ -4513,7 +4526,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>180</y>
+      <y>170</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4526,7 +4539,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>210</y>
+      <y>200</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4539,7 +4552,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>240</y>
+      <y>230</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4552,7 +4565,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>270</y>
+      <y>260</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4565,7 +4578,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>300</y>
+      <y>290</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4578,7 +4591,7 @@ color: rgb(85, 87, 83);
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>330</y>
+      <y>320</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4590,7 +4603,7 @@ color: rgb(85, 87, 83);
    <widget class="QLabel" name="moneyAtHand">
     <property name="geometry">
      <rect>
-      <x>1100</x>
+      <x>990</x>
       <y>0</y>
       <width>151</width>
       <height>21</height>
@@ -4702,7 +4715,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>1160</x>
-      <y>530</y>
+      <y>540</y>
       <width>104</width>
       <height>31</height>
      </rect>
@@ -4715,20 +4728,20 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>450</y>
+      <y>465</y>
       <width>67</width>
       <height>19</height>
      </rect>
     </property>
     <property name="text">
-     <string>Utilities</string>
+     <string>Expenses</string>
     </property>
    </widget>
-   <widget class="QLabel" name="ironStatLabel_2">
+   <widget class="QLabel" name="activeIncomeLabel">
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>390</y>
+      <y>415</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4741,23 +4754,26 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>390</y>
+      <y>415</y>
       <width>101</width>
       <height>19</height>
      </rect>
     </property>
     <property name="text">
-     <string>Income Tax</string>
+     <string>Active Income</string>
     </property>
    </widget>
-   <widget class="QLabel" name="silverStatLabel_2">
+   <widget class="QLabel" name="totalExpensesLabel">
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>450</y>
+      <y>465</y>
       <width>67</width>
       <height>19</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: red;</string>
     </property>
     <property name="text">
      <string>$ 200</string>
@@ -4767,20 +4783,20 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>420</y>
-      <width>81</width>
+      <y>440</y>
+      <width>111</width>
       <height>19</height>
      </rect>
     </property>
     <property name="text">
-     <string>Motgage</string>
+     <string>Passive Income</string>
     </property>
    </widget>
-   <widget class="QLabel" name="platinumStatLabel_2">
+   <widget class="QLabel" name="passiveIncomeLabel">
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>420</y>
+      <y>440</y>
       <width>67</width>
       <height>19</height>
      </rect>
@@ -4792,40 +4808,121 @@ p, li { white-space: pre-wrap; }
    <widget class="QPlainTextEdit" name="plainTextEdit_7">
     <property name="geometry">
      <rect>
-      <x>1160</x>
-      <y>360</y>
-      <width>104</width>
+      <x>1103</x>
+      <y>340</y>
+      <width>181</width>
       <height>31</height>
      </rect>
     </property>
     <property name="plainText">
-     <string>Expenses</string>
+     <string>INCOME STATEMENT</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_55">
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>480</y>
-      <width>81</width>
+      <y>490</y>
+      <width>91</width>
       <height>19</height>
      </rect>
     </property>
     <property name="text">
-     <string>Vehicle Tax</string>
+     <string>Stock Worth</string>
     </property>
    </widget>
-   <widget class="QLabel" name="silverStatLabel_3">
+   <widget class="QLabel" name="stockWorthLabel">
     <property name="geometry">
      <rect>
       <x>1230</x>
-      <y>480</y>
+      <y>490</y>
       <width>67</width>
       <height>19</height>
      </rect>
     </property>
     <property name="text">
      <string>$ 100</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_56">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>515</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Net Worth</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NetWorthLabel">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>515</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>$ 100</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_57">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>367</y>
+      <width>101</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cash</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cashFlowLabel">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>367</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>$ 150</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_62">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>390</y>
+      <width>101</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dept</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deptLabel">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>390</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: red;</string>
+    </property>
+    <property name="text">
+     <string>$ 150</string>
     </property>
    </widget>
   </widget>

@@ -76,6 +76,8 @@ public:
     bool getMortgaging() const;
     void setMortgaging(bool value);
 
+    double getTotalExpenses();
+
 private:
 
     bool car;

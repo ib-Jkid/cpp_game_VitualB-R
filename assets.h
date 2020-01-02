@@ -71,6 +71,8 @@ public:
     void gameCycle(double rate);
     double getTotalAssetWorth();
 
+    double getTotalIncome();
+
 private:
     double loanLimit;
     unsigned int factoryOwned;

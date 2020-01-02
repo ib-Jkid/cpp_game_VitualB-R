@@ -44,6 +44,12 @@ MainWindow::~MainWindow()
 
 }
 
+double MainWindow::getCalculatedNetWorth() {
+   return (assets.getTotalAssetWorth()
+           + bank.getFinancialSummary()
+           + stock.getStockWorth());
+}
+
 void MainWindow::runGameCycle() {
 
     job.gameCycle();
@@ -71,20 +77,20 @@ void MainWindow::runGameCycle() {
 
         return ;
     }
-    if((assets.getTotalAssetWorth() + bank.getFinancialSummary() + stock.getStockWorth()) < 0){
+    if( getCalculatedNetWorth() < 0){
         QMessageBox::critical(this,"Game Over","You are broke");
         emit on_stop();
 
         return ;
     }
-    if((assets.getTotalAssetWorth() + bank.getFinancialSummary() + stock.getStockWorth()) > 1000000) {
+    if(getCalculatedNetWorth() > 1000000) {
         QMessageBox::information(this,"You Won","You net worth is over $1,000,000");
         emit on_stop();
 
 
 
     }
-    qDebug() << assets.getTotalAssetWorth() + bank.getFinancialSummary() + stock.getStockWorth() ;
+    qDebug() << getCalculatedNetWorth(); ;
 
 }
 
@@ -305,6 +311,18 @@ void MainWindow::on_groomingPageButton_clicked()
  * Update UI
  *
  * */
+
+void MainWindow::updateIncomeStatementUi()  {
+    ui->activeIncomeLabel->setText("$"+QString::number(job.getCurrentIncome())+"/C");
+    ui->passiveIncomeLabel->setText("$"+QString::number(assets.getTotalIncome())+"/C");
+
+    ui->totalExpensesLabel->setText("$"+QString::number(expenses.getExpenses())+"/C");
+
+    ui->stockWorthLabel->setText("$"+QString::number(stock.getStockWorth()) +"/C");
+    ui->cashFlowLabel->setText("$"+QString::number(bank.getFinancialSummary()+bank.getDept()));
+    ui->deptLabel->setText("$"+QString::number(bank.getDept() + bank.getSchoolLoan()));
+    ui->NetWorthLabel->setText("$"+QString::number(getCalculatedNetWorth()));
+}
 void MainWindow::updateNoticeBoard(QString info,bool tips = false) {
     if(tips) {
         QString prefix("Tips: ");
@@ -569,6 +587,7 @@ void MainWindow::updateUi()
     updateStockBoard();
     updateGroomingUi();
     updateJobUi();
+    updateIncomeStatementUi();
 
 }
 
@@ -1388,6 +1407,10 @@ void MainWindow::on_applyingLabourerJob_clicked()
 
 void MainWindow::on_learnBricklayerJob_clicked()
 {
+    if(!expenses.hasHouse()) {
+        updateNoticeBoard("You need to get a house first please rent a house");
+        return;
+    }
 
     if(job.startBrickLayingTraining()) {
         updateNoticeBoard("you have started you training on brick laying");
@@ -1401,6 +1424,10 @@ void MainWindow::on_learnBricklayerJob_clicked()
 
 void MainWindow::on_applyBrickLayerJob_clicked()
 {
+    if(!expenses.hasHouse()) {
+        updateNoticeBoard("You need to get a house first please rent a house");
+        return;
+    }
     if(job.getBrickLayingSkillProgress() >= 100) {
         if(job.applyBrickLayingJob()) {
             updateNoticeBoard("Your Application is pending");
@@ -1418,6 +1445,10 @@ void MainWindow::on_applyBrickLayerJob_clicked()
 
 void MainWindow::on_startPoliceOfficerTraining_clicked()
 {
+    if(!expenses.hasHouse()) {
+        updateNoticeBoard("You need to get a house first please rent a house");
+        return;
+    }
     if(job.startPoliceTraining()) {
         updateNoticeBoard("you have started your training in the police Academy");
     }else if(job.stopPoliceTraining()) {
@@ -1430,6 +1461,10 @@ void MainWindow::on_startPoliceOfficerTraining_clicked()
 
 void MainWindow::on_applyPoliceOfficerJob_clicked()
 {
+    if(!expenses.hasHouse()) {
+        updateNoticeBoard("You need to get a house first please rent a house");
+        return;
+    }
     if(job.getPoliceOfficerSkillProgress() >= 100) {
         if(job.applyPoliceJob()) {
             updateNoticeBoard("Your Application is pending");
@@ -1447,6 +1482,10 @@ void MainWindow::on_applyPoliceOfficerJob_clicked()
 
 void MainWindow::on_startDoctorsTraining_clicked()
 {
+    if(!expenses.hasHouse()) {
+        updateNoticeBoard("You need to get a house first please rent a house");
+        return;
+    }
     if(job.startDoctorsTraining()) {
         updateNoticeBoard("you have started your training in the Medical College");
     }else if(job.stopDoctorsTraining()) {
@@ -1454,11 +1493,16 @@ void MainWindow::on_startDoctorsTraining_clicked()
     }else {
         updateNoticeBoard("Training failed to start, make sure you are not doing any other job");
     }
+
     updateJobUi();
 }
 
 void MainWindow::on_applyDoctorsJob_clicked()
 {
+    if(!expenses.hasHouse()) {
+        updateNoticeBoard("You need to get a house first please rent a house");
+        return;
+    }
     if(job.getDoctorSkillProgress() >= 100) {
         if(job.applyDoctorJob()) {
             updateNoticeBoard("Your Application is pending");

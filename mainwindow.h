@@ -239,7 +239,9 @@ private:
 
     void payTutionFee(double fee);
     void paySalary(double salary);
+    void updateIncomeStatementUi();
 
+    double getCalculatedNetWorth();
 
 
 

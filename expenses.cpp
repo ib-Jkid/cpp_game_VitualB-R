@@ -123,6 +123,11 @@ void Expenses::setMortgaging(bool value)
 {
     mortgaging = value;
 }
+
+double Expenses::getTotalExpenses()
+{
+
+}
 bool Expenses::hireBodyGuard()
 {
     if(bodyGuard) {

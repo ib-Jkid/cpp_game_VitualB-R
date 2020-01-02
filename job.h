@@ -13,6 +13,7 @@ public:
     void gameCycle();
 
     double getSalary();
+    double getCurrentIncome();
 
     void tutionFeePaid(bool paid);
 

@@ -46,10 +46,18 @@ void Assets::gameCycle(double rate) {
     loanLimit = getTotalAssetWorth() * 2;
 }
 double Assets::getTotalAssetWorth() {
-   return ((bankOwned * bankCost /2) +
-    (houseOwned * houseCost /2)+
-    (refineryOwned * refineryCost /2)+
-    (factoryOwned * factoryCost /2) );
+    return ((bankOwned * bankCost) +
+            (houseOwned * houseCost)+
+            (refineryOwned * refineryCost)+
+            (factoryOwned * factoryCost) );
+}
+
+double Assets::getTotalIncome()
+{
+    return  ((bankOwned * bankIncome) +
+             (houseOwned * houseIncome)+
+             (refineryOwned * refineryIncome)+
+             (factoryOwned * factoryIncome) );
 }
 
 double Assets::getLoanLimit() const
@@ -196,11 +204,11 @@ void Assets::setAccumulatedIncome(double value)
 double Assets::getIncomePerCycle() const
 {
     return (
-       (factoryIncome*factoryOwned)+
-       (houseIncome*houseOwned)+
-       (refineryIncome*refineryOwned)+
-       (bankIncome*bankOwned)
-     );
+                (factoryIncome*factoryOwned)+
+                (houseIncome*houseOwned)+
+                (refineryIncome*refineryOwned)+
+                (bankIncome*bankOwned)
+                );
 }
 
 void Assets::setIncomePerCycle(double value)
@@ -251,7 +259,7 @@ double Assets::buyRefinery(int num, double money)
 double Assets::sellFactory(unsigned int num)
 {
     if(factoryOwned >= num) {
-        double cost = num * factoryCost / 2;
+        double cost = num * factoryCost;
         factoryOwned -= num;
         return cost;
     }
@@ -262,7 +270,7 @@ double Assets::sellFactory(unsigned int num)
 double Assets::sellHouse(unsigned int num)
 {
     if(houseOwned >= num) {
-        double cost = num * houseCost / 2;
+        double cost = num * houseCost;
         houseOwned -= num;
         return cost;
     }
@@ -273,7 +281,7 @@ double Assets::sellHouse(unsigned int num)
 double Assets::sellBank(unsigned int num)
 {
     if(bankOwned >= num) {
-        double cost = num * bankCost / 2;
+        double cost = num * bankCost;
         bankOwned -= num;
         return cost;
     }
@@ -284,7 +292,7 @@ double Assets::sellBank(unsigned int num)
 double Assets::sellRefinery(unsigned int num)
 {
     if(refineryOwned >= num) {
-        double cost = num * refineryCost / 2;
+        double cost = num * refineryCost;
         refineryOwned -= num;
         return cost;
     }
@@ -304,7 +312,7 @@ double Assets::collectIncome()
 
 int Assets::getProgress() const{
     if(accumulatedIncome > 0){
-         return (accumulatedIncome * 100 / accumulatedIncomeLimit);
+        return (accumulatedIncome * 100 / accumulatedIncomeLimit);
     }
     return 0;
 
