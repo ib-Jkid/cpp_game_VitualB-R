@@ -599,16 +599,20 @@ void MainWindow::on_depositeButton_clicked()
 {
     double depositeAmount;
     QString text = ui->depositeComboBox->currentText();
-    if(text == "$50,000") {
-        depositeAmount = 50000.0;
-    }else if(text == "$100,000") {
-        depositeAmount = 100000.0;
-    }else if(text == "$150,000") {
-        depositeAmount = 150000.0;
-    }else if(text == "$200,000") {
-        depositeAmount = 200000.0;
-    }else if(text == "$250,000") {
-        depositeAmount = 250000.0;
+    if(text == "$50") {
+        depositeAmount = 50.0;
+    }else if(text == "$100") {
+        depositeAmount = 100.0;
+    }else if(text == "$150") {
+        depositeAmount = 150.0;
+    }else if(text == "$200") {
+        depositeAmount = 200.0;
+    }else if(text == "$250") {
+        depositeAmount = 250.0;
+    }else if(text == "$500") {
+        depositeAmount = 500.0;
+    }else if(text == "$1,000") {
+        depositeAmount = 1000.0;
     }else {
         depositeAmount = 0.0;
     }
@@ -639,16 +643,20 @@ void MainWindow::on_withdrawalButton_clicked()
 {
     double withdrawAmount= 0.0;
     QString text = ui->withdrawalComboBox->currentText();
-    if(text == "$50,000") {
-        withdrawAmount = 50000.0;
-    }else if(text == "$100,000") {
-        withdrawAmount = 100000.0;
-    }else if(text == "$150,000") {
-        withdrawAmount = 150000.0;
-    }else if(text == "$200,000") {
-        withdrawAmount = 200000.0;
-    }else if(text == "$250,000") {
-        withdrawAmount = 250000.0;
+    if(text == "$50") {
+        withdrawAmount = 50.0;
+    }else if(text == "$100") {
+        withdrawAmount = 100.0;
+    }else if(text == "$150") {
+        withdrawAmount = 150.0;
+    }else if(text == "$200") {
+        withdrawAmount = 200.0;
+    }else if(text == "$250") {
+        withdrawAmount = 250.0;
+    }else if(text == "$500") {
+        withdrawAmount = 500.0;
+    }else if(text == "$1,000") {
+        withdrawAmount = 1000.0;
     }
     if(bank.withdraw(withdrawAmount)) {
         updateNoticeBoard("Your withdrawal was successfull");
@@ -670,20 +678,20 @@ void MainWindow::on_loanButton_clicked()
 {
     double loanAmount = 0.0;
     QString text = ui->loanComboBox->currentText();
-    if(text == "$50,000") {
+    if(text == "$5,000") {
+        loanAmount = 5000.0;
+    }else if(text == "$10,000") {
+        loanAmount = 10000.0;
+    }else if(text == "$15,000") {
+        loanAmount = 15000.0;
+    }else if(text == "$20,000") {
+        loanAmount = 20000.0;
+    }else if(text == "$25,000") {
+        loanAmount = 25000.0;
+    }else if(text == "$50,000") {
         loanAmount = 50000.0;
     }else if(text == "$100,000") {
         loanAmount = 100000.0;
-    }else if(text == "$150,000") {
-        loanAmount = 150000.0;
-    }else if(text == "$200,000") {
-        loanAmount = 200000.0;
-    }else if(text == "$250,000") {
-        loanAmount = 250000.0;
-    }else if(text == "$500,000") {
-        loanAmount = 500000.0;
-    }else if(text == "$1,000,000") {
-        loanAmount = 1000000.0;
     }
 
     if(bank.processLoan(loanAmount,assets.getLoanLimit())) {
@@ -1393,13 +1401,18 @@ void MainWindow::on_learnBricklayerJob_clicked()
 
 void MainWindow::on_applyBrickLayerJob_clicked()
 {
-    if(job.applyBrickLayingJob()) {
-        updateNoticeBoard("Your Application is pending");
-    }else if(job.cancelBrickLayingJobApplication()) {
-        updateNoticeBoard("you have cancelled your application");
+    if(job.getBrickLayingSkillProgress() >= 100) {
+        if(job.applyBrickLayingJob()) {
+            updateNoticeBoard("Your Application is pending");
+        }else if(job.cancelBrickLayingJobApplication()) {
+            updateNoticeBoard("you have cancelled your application");
+        }else {
+            updateNoticeBoard("You cant Perfome multible jobs at same time");
+        }
     }else {
-        updateNoticeBoard("You cant Perfome multible jobs at same time");
+        updateNoticeBoard("You don't have the required skill");
     }
+
     updateJobUi();
 }
 
@@ -1417,13 +1430,18 @@ void MainWindow::on_startPoliceOfficerTraining_clicked()
 
 void MainWindow::on_applyPoliceOfficerJob_clicked()
 {
-    if(job.applyPoliceJob()) {
-        updateNoticeBoard("Your Application is pending");
-    }else if(job.cancelPoliceJobApplication()) {
-        updateNoticeBoard("you have cancelled your application");
+    if(job.getPoliceOfficerSkillProgress() >= 100) {
+        if(job.applyPoliceJob()) {
+            updateNoticeBoard("Your Application is pending");
+        }else if(job.cancelPoliceJobApplication()) {
+            updateNoticeBoard("you have cancelled your application");
+        }else {
+            updateNoticeBoard("You cant Perfome multible jobs at same time");
+        }
     }else {
-        updateNoticeBoard("You cant Perfome multible jobs at same time");
+        updateNoticeBoard("You can't work as a police officer without training");
     }
+
     updateJobUi();
 }
 
@@ -1441,12 +1459,17 @@ void MainWindow::on_startDoctorsTraining_clicked()
 
 void MainWindow::on_applyDoctorsJob_clicked()
 {
-    if(job.applyDoctorJob()) {
-        updateNoticeBoard("Your Application is pending");
-    }else if(job.cancelDoctorJobApplication()) {
-        updateNoticeBoard("you have cancelled your application");
+    if(job.getDoctorSkillProgress() >= 100) {
+        if(job.applyDoctorJob()) {
+            updateNoticeBoard("Your Application is pending");
+        }else if(job.cancelDoctorJobApplication()) {
+            updateNoticeBoard("you have cancelled your application");
+        }else {
+            updateNoticeBoard("You cant Perfome multible jobs at same time");
+        }
     }else {
-        updateNoticeBoard("You cant Perfome multible jobs at same time");
+        updateNoticeBoard("Medical jobs require certification");
     }
+
     updateJobUi();
 }
