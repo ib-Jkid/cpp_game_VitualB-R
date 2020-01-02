@@ -220,7 +220,7 @@ font-weight: bold;</string>
       <string notr="true">background-color:  white;</string>
      </property>
      <property name="currentIndex">
-      <number>10</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="homePage"/>
      <widget class="QWidget" name="bankPage">
@@ -749,8 +749,8 @@ font-size: 10px;</string>
       <widget class="QWidget" name="widget_2" native="true">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>0</y>
+         <x>170</x>
+         <y>20</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -762,8 +762,8 @@ font-size: 10px;</string>
       <widget class="QWidget" name="widget_3" native="true">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>0</y>
+         <x>460</x>
+         <y>20</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -776,7 +776,7 @@ font-size: 10px;</string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>160</y>
+         <y>220</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -788,8 +788,8 @@ font-size: 10px;</string>
       <widget class="QWidget" name="widget_5" native="true">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>160</y>
+         <x>340</x>
+         <y>220</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -801,8 +801,8 @@ font-size: 10px;</string>
       <widget class="QWidget" name="widget_6" native="true">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>90</y>
+         <x>670</x>
+         <y>107</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -833,8 +833,8 @@ background-color: black;</string>
       <widget class="QProgressBar" name="accumulatedIncomeProgressBar">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>63</y>
+         <x>670</x>
+         <y>80</y>
          <width>118</width>
          <height>20</height>
         </rect>
@@ -846,8 +846,8 @@ background-color: black;</string>
       <widget class="QPushButton" name="collectIncomeButton">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>180</y>
+         <x>670</x>
+         <y>197</y>
          <width>121</width>
          <height>27</height>
         </rect>
@@ -863,8 +863,8 @@ color: white;</string>
       <widget class="QPlainTextEdit" name="plainTextEdit">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>80</y>
+         <x>170</x>
+         <y>100</y>
          <width>61</width>
          <height>51</height>
         </rect>
@@ -883,8 +883,8 @@ Cost : </string>
       <widget class="QPlainTextEdit" name="plainTextEdit_2">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>80</y>
+         <x>460</x>
+         <y>100</y>
          <width>61</width>
          <height>51</height>
         </rect>
@@ -903,8 +903,8 @@ Cost : </string>
       <widget class="QPlainTextEdit" name="plainTextEdit_3">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>240</y>
+         <x>340</x>
+         <y>300</y>
          <width>61</width>
          <height>51</height>
         </rect>
@@ -924,7 +924,7 @@ Cost : </string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>240</y>
+         <y>300</y>
          <width>61</width>
          <height>51</height>
         </rect>
@@ -943,8 +943,8 @@ Cost : </string>
       <widget class="QComboBox" name="factoryComboBox">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>130</y>
+         <x>170</x>
+         <y>150</y>
          <width>41</width>
          <height>21</height>
         </rect>
@@ -1008,8 +1008,8 @@ color: white;</string>
       <widget class="QPushButton" name="factoryBuyButton">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>130</y>
+         <x>220</x>
+         <y>150</y>
          <width>31</width>
          <height>21</height>
         </rect>
@@ -1025,8 +1025,8 @@ color: white;</string>
       <widget class="QPushButton" name="factorySellButton">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>130</y>
+         <x>260</x>
+         <y>150</y>
          <width>31</width>
          <height>21</height>
         </rect>
@@ -1042,8 +1042,8 @@ color: white;</string>
       <widget class="QComboBox" name="houseComboBox">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>130</y>
+         <x>460</x>
+         <y>150</y>
          <width>41</width>
          <height>21</height>
         </rect>
@@ -1107,8 +1107,8 @@ color: white;</string>
       <widget class="QPushButton" name="houseSellButton">
        <property name="geometry">
         <rect>
-         <x>250</x>
-         <y>130</y>
+         <x>550</x>
+         <y>150</y>
          <width>31</width>
          <height>21</height>
         </rect>
@@ -1124,8 +1124,8 @@ color: white;</string>
       <widget class="QPushButton" name="houseBuyButton">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>130</y>
+         <x>510</x>
+         <y>150</y>
          <width>31</width>
          <height>21</height>
         </rect>
@@ -1141,8 +1141,8 @@ color: white;</string>
       <widget class="QComboBox" name="bankAssetComboBox">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>290</y>
+         <x>350</x>
+         <y>350</y>
          <width>41</width>
          <height>21</height>
         </rect>
@@ -1206,8 +1206,8 @@ color: white;</string>
       <widget class="QPushButton" name="BankSellButton">
        <property name="geometry">
         <rect>
-         <x>260</x>
-         <y>290</y>
+         <x>440</x>
+         <y>350</y>
          <width>31</width>
          <height>21</height>
         </rect>
@@ -1223,8 +1223,8 @@ color: white;</string>
       <widget class="QPushButton" name="BankBuyButton">
        <property name="geometry">
         <rect>
-         <x>220</x>
-         <y>290</y>
+         <x>400</x>
+         <y>350</y>
          <width>31</width>
          <height>21</height>
         </rect>
@@ -1241,7 +1241,7 @@ color: white;</string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>290</y>
+         <y>350</y>
          <width>41</width>
          <height>21</height>
         </rect>
@@ -1306,7 +1306,7 @@ color: white;</string>
        <property name="geometry">
         <rect>
          <x>110</x>
-         <y>290</y>
+         <y>350</y>
          <width>31</width>
          <height>21</height>
         </rect>
@@ -1323,7 +1323,7 @@ color: white;</string>
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>290</y>
+         <y>350</y>
          <width>31</width>
          <height>21</height>
         </rect>
@@ -1339,8 +1339,8 @@ color: white;</string>
       <widget class="QLabel" name="factoryOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>81</y>
+         <x>220</x>
+         <y>101</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1356,8 +1356,8 @@ color: black;</string>
       <widget class="QLabel" name="factoryIncome">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>96</y>
+         <x>220</x>
+         <y>116</y>
          <width>51</width>
          <height>16</height>
         </rect>
@@ -1373,8 +1373,8 @@ color: black;</string>
       <widget class="QLabel" name="factoryCostLabel">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>110</y>
+         <x>210</x>
+         <y>130</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1391,7 +1391,7 @@ color: black;</string>
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>240</y>
+         <y>300</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1408,7 +1408,7 @@ color: black;</string>
        <property name="geometry">
         <rect>
          <x>60</x>
-         <y>269</y>
+         <y>329</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1425,7 +1425,7 @@ color: black;</string>
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>255</y>
+         <y>315</y>
          <width>51</width>
          <height>16</height>
         </rect>
@@ -1441,8 +1441,8 @@ color: black;</string>
       <widget class="QLabel" name="bankOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>241</y>
+         <x>390</x>
+         <y>301</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1458,8 +1458,8 @@ color: black;</string>
       <widget class="QLabel" name="bankCostLabel">
        <property name="geometry">
         <rect>
-         <x>200</x>
-         <y>270</y>
+         <x>380</x>
+         <y>330</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1475,8 +1475,8 @@ color: black;</string>
       <widget class="QLabel" name="bankIncomeLabel">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>256</y>
+         <x>390</x>
+         <y>316</y>
          <width>51</width>
          <height>16</height>
         </rect>
@@ -1492,8 +1492,8 @@ color: black;</string>
       <widget class="QLabel" name="houseOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>80</y>
+         <x>510</x>
+         <y>100</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1509,8 +1509,8 @@ color: black;</string>
       <widget class="QLabel" name="houseCostLabel">
        <property name="geometry">
         <rect>
-         <x>200</x>
-         <y>109</y>
+         <x>500</x>
+         <y>129</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1526,8 +1526,8 @@ color: black;</string>
       <widget class="QLabel" name="houseIncomeLabel">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>95</y>
+         <x>510</x>
+         <y>115</y>
          <width>51</width>
          <height>16</height>
         </rect>
@@ -1543,8 +1543,8 @@ color: black;</string>
       <widget class="QLabel" name="incomePerCycleLabel">
        <property name="geometry">
         <rect>
-         <x>320</x>
-         <y>280</y>
+         <x>690</x>
+         <y>297</y>
          <width>91</width>
          <height>20</height>
         </rect>
@@ -1559,8 +1559,8 @@ color: black;</string>
       <widget class="QLabel" name="label_14">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>250</y>
+         <x>680</x>
+         <y>267</y>
          <width>121</width>
          <height>31</height>
         </rect>
@@ -2116,7 +2116,7 @@ background-color: rgb(46, 52, 54);</string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>170</y>
+         <y>240</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -2164,8 +2164,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QWidget" name="widget_36" native="true">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>170</y>
+         <x>350</x>
+         <y>230</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -2213,8 +2213,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QWidget" name="widget_37" native="true">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>170</y>
+         <x>650</x>
+         <y>230</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -2262,8 +2262,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QWidget" name="widget_38" native="true">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>30</y>
+         <x>640</x>
+         <y>50</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -2311,8 +2311,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QWidget" name="widget_32" native="true">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>30</y>
+         <x>340</x>
+         <y>40</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -2405,8 +2405,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="bronzeSellButton">
        <property name="geometry">
         <rect>
-         <x>240</x>
-         <y>120</y>
+         <x>410</x>
+         <y>130</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2421,8 +2421,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="bronzeBuyButton">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>120</y>
+         <x>340</x>
+         <y>130</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2437,8 +2437,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="oilSellButton">
        <property name="geometry">
         <rect>
-         <x>380</x>
-         <y>120</y>
+         <x>710</x>
+         <y>140</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2453,8 +2453,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="oilBuyButton">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>120</y>
+         <x>640</x>
+         <y>140</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2470,7 +2470,7 @@ background-color: rgb(46, 52, 54);</string>
        <property name="geometry">
         <rect>
          <x>90</x>
-         <y>260</y>
+         <y>330</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2486,7 +2486,7 @@ background-color: rgb(46, 52, 54);</string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>260</y>
+         <y>330</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2501,8 +2501,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="platinumSellButton">
        <property name="geometry">
         <rect>
-         <x>240</x>
-         <y>260</y>
+         <x>420</x>
+         <y>320</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2517,8 +2517,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="platinumBuyButton">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>260</y>
+         <x>350</x>
+         <y>320</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2533,8 +2533,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="silverBuyButton">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>260</y>
+         <x>650</x>
+         <y>320</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2549,8 +2549,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="silverSellButton">
        <property name="geometry">
         <rect>
-         <x>380</x>
-         <y>260</y>
+         <x>720</x>
+         <y>320</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -2581,8 +2581,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="bronzeOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>140</y>
+         <x>340</x>
+         <y>150</y>
          <width>67</width>
          <height>19</height>
         </rect>
@@ -2597,8 +2597,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="oilOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>140</y>
+         <x>640</x>
+         <y>160</y>
          <width>67</width>
          <height>19</height>
         </rect>
@@ -2613,8 +2613,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="silverOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>290</y>
+         <x>650</x>
+         <y>350</y>
          <width>67</width>
          <height>19</height>
         </rect>
@@ -2629,8 +2629,8 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="platiniumOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>290</y>
+         <x>350</x>
+         <y>350</y>
          <width>67</width>
          <height>19</height>
         </rect>
@@ -2646,7 +2646,7 @@ background-color: rgb(46, 52, 54);</string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>290</y>
+         <y>360</y>
          <width>67</width>
          <height>19</height>
         </rect>
@@ -3330,7 +3330,7 @@ text-align: center;
       <widget class="QWidget" name="widget_44" native="true">
        <property name="geometry">
         <rect>
-         <x>30</x>
+         <x>180</x>
          <y>30</y>
          <width>151</width>
          <height>101</height>
@@ -3361,8 +3361,8 @@ color: black;</string>
       <widget class="QWidget" name="widget_45" native="true">
        <property name="geometry">
         <rect>
-         <x>250</x>
-         <y>30</y>
+         <x>600</x>
+         <y>40</y>
          <width>161</width>
          <height>101</height>
         </rect>
@@ -3393,7 +3393,7 @@ color: black;</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>180</y>
+         <y>220</y>
          <width>151</width>
          <height>101</height>
         </rect>
@@ -3423,8 +3423,8 @@ color: black;</string>
       <widget class="QWidget" name="widget_47" native="true">
        <property name="geometry">
         <rect>
-         <x>249</x>
-         <y>180</y>
+         <x>440</x>
+         <y>210</y>
          <width>161</width>
          <height>101</height>
         </rect>
@@ -3454,8 +3454,8 @@ color: black;</string>
       <widget class="QPushButton" name="washHandButton">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>130</y>
+         <x>230</x>
+         <y>150</y>
          <width>61</width>
          <height>31</height>
         </rect>
@@ -3471,8 +3471,8 @@ background-color: black;</string>
       <widget class="QPushButton" name="brushTeethButton">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>280</y>
+         <x>60</x>
+         <y>330</y>
          <width>61</width>
          <height>31</height>
         </rect>
@@ -3488,8 +3488,8 @@ background-color: black;</string>
       <widget class="QPushButton" name="doLaundryButton">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>280</y>
+         <x>490</x>
+         <y>330</y>
          <width>61</width>
          <height>31</height>
         </rect>
@@ -3505,8 +3505,8 @@ background-color: black;</string>
       <widget class="QPushButton" name="takeBathButton">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>130</y>
+         <x>640</x>
+         <y>150</y>
          <width>61</width>
          <height>31</height>
         </rect>
@@ -3527,8 +3527,8 @@ background-color: black;</string>
       <widget class="QWidget" name="widget_25" native="true">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>160</y>
+         <x>70</x>
+         <y>260</y>
          <width>121</width>
          <height>81</height>
         </rect>
@@ -3576,7 +3576,7 @@ background-color: black;</string>
       <widget class="QWidget" name="widget_26" native="true">
        <property name="geometry">
         <rect>
-         <x>190</x>
+         <x>360</x>
          <y>20</y>
          <width>120</width>
          <height>80</height>
@@ -3625,7 +3625,7 @@ background-color: black;</string>
       <widget class="QWidget" name="widget_28" native="true">
        <property name="geometry">
         <rect>
-         <x>40</x>
+         <x>60</x>
          <y>20</y>
          <width>120</width>
          <height>80</height>
@@ -3675,8 +3675,8 @@ background-color: black;</string>
       <widget class="QWidget" name="widget_29" native="true">
        <property name="geometry">
         <rect>
-         <x>320</x>
-         <y>210</y>
+         <x>670</x>
+         <y>250</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -3724,8 +3724,8 @@ background-color: black;</string>
       <widget class="QWidget" name="widget_30" native="true">
        <property name="geometry">
         <rect>
-         <x>180</x>
-         <y>160</y>
+         <x>380</x>
+         <y>240</y>
          <width>120</width>
          <height>80</height>
         </rect>
@@ -3773,8 +3773,8 @@ background-color: black;</string>
       <widget class="QWidget" name="widget_27" native="true">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>20</y>
+         <x>680</x>
+         <y>10</y>
          <width>91</width>
          <height>141</height>
         </rect>
@@ -3823,7 +3823,7 @@ color: black;</string>
       <widget class="QLabel" name="label_6">
        <property name="geometry">
         <rect>
-         <x>70</x>
+         <x>100</x>
          <y>100</y>
          <width>67</width>
          <height>19</height>
@@ -3839,7 +3839,7 @@ color: black;</string>
       <widget class="QLabel" name="label_35">
        <property name="geometry">
         <rect>
-         <x>220</x>
+         <x>400</x>
          <y>100</y>
          <width>67</width>
          <height>19</height>
@@ -3855,8 +3855,8 @@ color: black;</string>
       <widget class="QLabel" name="label_36">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>250</y>
+         <x>420</x>
+         <y>320</y>
          <width>67</width>
          <height>19</height>
         </rect>
@@ -3871,8 +3871,8 @@ color: black;</string>
       <widget class="QLabel" name="label_37">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>250</y>
+         <x>110</x>
+         <y>340</y>
          <width>61</width>
          <height>16</height>
         </rect>
@@ -3887,8 +3887,8 @@ color: black;</string>
       <widget class="QLabel" name="label_38">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>160</y>
+         <x>680</x>
+         <y>150</y>
          <width>91</width>
          <height>21</height>
         </rect>
@@ -3903,8 +3903,8 @@ color: black;</string>
       <widget class="QLabel" name="label_39">
        <property name="geometry">
         <rect>
-         <x>370</x>
-         <y>290</y>
+         <x>720</x>
+         <y>350</y>
          <width>41</width>
          <height>21</height>
         </rect>
