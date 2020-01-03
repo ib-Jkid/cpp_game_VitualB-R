@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
+#include <QGraphicsProxyWidget>
+#include <QPushButton>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -23,6 +25,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(&back,&Back::on_updateUi,this,&MainWindow::updateUi);
     connect(&back,&Back::on_runGameCycle,this,&MainWindow::runGameCycle);
     connect(this,&MainWindow::on_stop,&back,&Back::stop);
+    connect(&back,&Back::on_freeLunch,this,&MainWindow::freeLunch);
+    connect(&back,&Back::on_winLotto,this,&MainWindow::winLotto);
+    connect(&back,&Back::on_freeMedical,this,&MainWindow::freeMedical);
+    connect(&back,&Back::on_WinCar,this,&MainWindow::winCar);
     QFuture<void> test = QtConcurrent::run(&this->back,&Back::loop);
 
     connect(&job,&Job::on_payTuitionFee,this,&MainWindow::payTutionFee);
@@ -31,7 +37,19 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
+   QGraphicsScene *scene = new QGraphicsScene(this);
+    QImage image("/home/street/Desktop/spiral.png");
 
+    ui->graphicsView->setScene(scene);
+    QPixmap originalImage = QPixmap::fromImage(image);
+    QPixmap scaledImage = originalImage.scaledToHeight( ui->graphicsView->height()-150, Qt::SmoothTransformation);
+    QGraphicsPixmapItem *item = scene->addPixmap(scaledImage);
+    QPropertyAnimation *animation = new QPropertyAnimation(scene,"rotation");
+    animation->setDuration(3000);
+    animation->setStartValue(0);
+    animation->setEndValue(45);
+    animation->setEasingCurve(QEasingCurve::Linear);
+    animation->start();
 }
 
 
@@ -111,6 +129,39 @@ void MainWindow::paySalary(double salary)
     if(bank.recieveEarnings(salary)) {
         updateNoticeBoard("Salary of $" + QString::number(salary)+ "has been recieved",false);
     }
+}
+
+void MainWindow::winLotto()
+{
+    if(bank.earn(100.0)) {
+        notify("WON LOTTO:","You won a lotto worth $100");
+    }
+}
+
+void MainWindow::freeLunch()
+{
+    player.setEnergy(100);
+    player.setStarvationLevel(100);
+    notify("FREE LUNCH","A friend took you out for lunch");
+
+}
+
+void MainWindow::freeMedical()
+{
+    player.setEnergy(100);
+    notify("MEDICAL OUTREACH","You got medical support from the government");
+
+
+}
+
+void MainWindow::winCar()
+{
+    if(expenses.hasCar()) {
+        bank.setAccountBalance(bank.getAccountBalance()+1000);
+        notify("JACKPOT!!!","you won a $1000");
+    }
+    expenses.setCar(true);
+     notify("JACKPOT!!!","you won a car");
 }
 
 
@@ -1515,4 +1566,9 @@ void MainWindow::on_applyDoctorsJob_clicked()
     }
 
     updateJobUi();
+}
+
+void MainWindow::on_rollCasinoPlate_clicked()
+{
+
 }

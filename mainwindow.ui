@@ -220,9 +220,13 @@ font-weight: bold;</string>
       <string notr="true">background-color:  white;</string>
      </property>
      <property name="currentIndex">
-      <number>8</number>
+      <number>3</number>
      </property>
-     <widget class="QWidget" name="homePage"/>
+     <widget class="QWidget" name="homePage">
+      <property name="styleSheet">
+       <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));</string>
+      </property>
+     </widget>
      <widget class="QWidget" name="bankPage">
       <property name="styleSheet">
        <string notr="true">border-image: url(:/images/images/bankingHall.jpg);</string>
@@ -744,13 +748,16 @@ border-image: none;</string>
       </widget>
      </widget>
      <widget class="QWidget" name="assetsPage">
+      <property name="styleSheet">
+       <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));</string>
+      </property>
       <widget class="QWidget" name="widget_2" native="true">
        <property name="geometry">
         <rect>
-         <x>170</x>
+         <x>20</x>
          <y>20</y>
-         <width>120</width>
-         <height>80</height>
+         <width>221</width>
+         <height>121</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -760,10 +767,10 @@ border-image: none;</string>
       <widget class="QWidget" name="widget_3" native="true">
        <property name="geometry">
         <rect>
-         <x>460</x>
+         <x>260</x>
          <y>20</y>
-         <width>120</width>
-         <height>80</height>
+         <width>221</width>
+         <height>121</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -775,8 +782,8 @@ border-image: none;</string>
         <rect>
          <x>20</x>
          <y>220</y>
-         <width>120</width>
-         <height>80</height>
+         <width>221</width>
+         <height>121</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -786,10 +793,10 @@ border-image: none;</string>
       <widget class="QWidget" name="widget_5" native="true">
        <property name="geometry">
         <rect>
-         <x>340</x>
+         <x>260</x>
          <y>220</y>
-         <width>120</width>
-         <height>80</height>
+         <width>221</width>
+         <height>121</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -799,10 +806,10 @@ border-image: none;</string>
       <widget class="QWidget" name="widget_6" native="true">
        <property name="geometry">
         <rect>
-         <x>670</x>
-         <y>107</y>
-         <width>120</width>
-         <height>80</height>
+         <x>620</x>
+         <y>100</y>
+         <width>231</width>
+         <height>141</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -811,17 +818,17 @@ border-image: none;</string>
        <widget class="QLabel" name="accummulatedIncome">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>30</y>
-          <width>121</width>
+          <x>70</x>
+          <y>60</y>
+          <width>101</width>
           <height>21</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">color:  white;
+         <string notr="true">color:  rgb(0, 0, 0);
 font-size: 25px;
 border-image: none;
-background-color: black;</string>
+background-color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
          <string>10000</string>
@@ -831,10 +838,10 @@ background-color: black;</string>
       <widget class="QProgressBar" name="accumulatedIncomeProgressBar">
        <property name="geometry">
         <rect>
-         <x>670</x>
-         <y>80</y>
-         <width>118</width>
-         <height>20</height>
+         <x>620</x>
+         <y>70</y>
+         <width>231</width>
+         <height>31</height>
         </rect>
        </property>
        <property name="value">
@@ -844,14 +851,14 @@ background-color: black;</string>
       <widget class="QPushButton" name="collectIncomeButton">
        <property name="geometry">
         <rect>
-         <x>670</x>
-         <y>197</y>
-         <width>121</width>
-         <height>27</height>
+         <x>750</x>
+         <y>250</y>
+         <width>101</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: black;
+        <string notr="true">background-color: rgb(164, 0, 0);
 color: white;</string>
        </property>
        <property name="text">
@@ -861,8 +868,8 @@ color: white;</string>
       <widget class="QPlainTextEdit" name="plainTextEdit">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>100</y>
+         <x>20</x>
+         <y>150</y>
          <width>61</width>
          <height>51</height>
         </rect>
@@ -870,7 +877,8 @@ color: white;</string>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
 border: none;
-color: black;</string>
+color: black;
+background-color: rgb(255, 255, 255);</string>
        </property>
        <property name="plainText">
         <string>Owned :
@@ -881,14 +889,15 @@ Cost : </string>
       <widget class="QPlainTextEdit" name="plainTextEdit_2">
        <property name="geometry">
         <rect>
-         <x>460</x>
-         <y>100</y>
+         <x>260</x>
+         <y>151</y>
          <width>61</width>
          <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 border: none;
 color: black;</string>
        </property>
@@ -901,14 +910,15 @@ Cost : </string>
       <widget class="QPlainTextEdit" name="plainTextEdit_3">
        <property name="geometry">
         <rect>
-         <x>340</x>
-         <y>300</y>
+         <x>260</x>
+         <y>350</y>
          <width>61</width>
          <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 border: none;
 color: black;</string>
        </property>
@@ -922,7 +932,7 @@ Cost : </string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>300</y>
+         <y>350</y>
          <width>61</width>
          <height>51</height>
         </rect>
@@ -930,7 +940,8 @@ Cost : </string>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
 border: none;
-color: black;</string>
+color: black;
+background-color: rgb(255, 255, 255);</string>
        </property>
        <property name="plainText">
         <string>Owned :
@@ -941,7 +952,7 @@ Cost : </string>
       <widget class="QComboBox" name="factoryComboBox">
        <property name="geometry">
         <rect>
-         <x>170</x>
+         <x>125</x>
          <y>150</y>
          <width>41</width>
          <height>21</height>
@@ -1006,14 +1017,14 @@ color: white;</string>
       <widget class="QPushButton" name="factoryBuyButton">
        <property name="geometry">
         <rect>
-         <x>220</x>
-         <y>150</y>
-         <width>31</width>
+         <x>130</x>
+         <y>180</y>
+         <width>111</width>
          <height>21</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: black;
+        <string notr="true">background-color: rgb(164, 0, 0);
 color: white;</string>
        </property>
        <property name="text">
@@ -1023,9 +1034,9 @@ color: white;</string>
       <widget class="QPushButton" name="factorySellButton">
        <property name="geometry">
         <rect>
-         <x>260</x>
+         <x>170</x>
          <y>150</y>
-         <width>31</width>
+         <width>71</width>
          <height>21</height>
         </rect>
        </property>
@@ -1040,7 +1051,7 @@ color: white;</string>
       <widget class="QComboBox" name="houseComboBox">
        <property name="geometry">
         <rect>
-         <x>460</x>
+         <x>370</x>
          <y>150</y>
          <width>41</width>
          <height>21</height>
@@ -1105,9 +1116,9 @@ color: white;</string>
       <widget class="QPushButton" name="houseSellButton">
        <property name="geometry">
         <rect>
-         <x>550</x>
+         <x>420</x>
          <y>150</y>
-         <width>31</width>
+         <width>61</width>
          <height>21</height>
         </rect>
        </property>
@@ -1122,14 +1133,14 @@ color: white;</string>
       <widget class="QPushButton" name="houseBuyButton">
        <property name="geometry">
         <rect>
-         <x>510</x>
-         <y>150</y>
-         <width>31</width>
+         <x>370</x>
+         <y>180</y>
+         <width>111</width>
          <height>21</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: black;
+        <string notr="true">background-color: rgb(164, 0, 0);
 color: white;</string>
        </property>
        <property name="text">
@@ -1139,7 +1150,7 @@ color: white;</string>
       <widget class="QComboBox" name="bankAssetComboBox">
        <property name="geometry">
         <rect>
-         <x>350</x>
+         <x>370</x>
          <y>350</y>
          <width>41</width>
          <height>21</height>
@@ -1204,9 +1215,9 @@ color: white;</string>
       <widget class="QPushButton" name="BankSellButton">
        <property name="geometry">
         <rect>
-         <x>440</x>
+         <x>420</x>
          <y>350</y>
-         <width>31</width>
+         <width>61</width>
          <height>21</height>
         </rect>
        </property>
@@ -1221,15 +1232,15 @@ color: white;</string>
       <widget class="QPushButton" name="BankBuyButton">
        <property name="geometry">
         <rect>
-         <x>400</x>
-         <y>350</y>
-         <width>31</width>
+         <x>370</x>
+         <y>380</y>
+         <width>111</width>
          <height>21</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: black;
-color: white;</string>
+        <string notr="true">background-color: rgb(164, 0, 0);
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>buy</string>
@@ -1238,7 +1249,7 @@ color: white;</string>
       <widget class="QComboBox" name="refineryComboBox">
        <property name="geometry">
         <rect>
-         <x>20</x>
+         <x>130</x>
          <y>350</y>
          <width>41</width>
          <height>21</height>
@@ -1303,9 +1314,9 @@ color: white;</string>
       <widget class="QPushButton" name="refinerySellButton">
        <property name="geometry">
         <rect>
-         <x>110</x>
+         <x>180</x>
          <y>350</y>
-         <width>31</width>
+         <width>61</width>
          <height>21</height>
         </rect>
        </property>
@@ -1320,14 +1331,14 @@ color: white;</string>
       <widget class="QPushButton" name="refineryBuyButton">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>350</y>
-         <width>31</width>
+         <x>130</x>
+         <y>380</y>
+         <width>111</width>
          <height>21</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: black;
+        <string notr="true">background-color: rgb(164, 0, 0);
 color: white;</string>
        </property>
        <property name="text">
@@ -1337,15 +1348,16 @@ color: white;</string>
       <widget class="QLabel" name="factoryOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>220</x>
-         <y>101</y>
+         <x>70</x>
+         <y>150</y>
          <width>51</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
-color: black;</string>
+color: black;
+background-color: rgb(255, 255, 255)</string>
        </property>
        <property name="text">
         <string>0</string>
@@ -1354,15 +1366,16 @@ color: black;</string>
       <widget class="QLabel" name="factoryIncome">
        <property name="geometry">
         <rect>
-         <x>220</x>
-         <y>116</y>
+         <x>70</x>
+         <y>166</y>
          <width>51</width>
          <height>16</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
-color: black;</string>
+color: black;
+background-color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>0</string>
@@ -1371,15 +1384,16 @@ color: black;</string>
       <widget class="QLabel" name="factoryCostLabel">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>130</y>
+         <x>70</x>
+         <y>180</y>
          <width>51</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
-color: black;</string>
+color: black;
+background-color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>0</string>
@@ -1389,14 +1403,16 @@ color: black;</string>
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>300</y>
+         <y>350</y>
          <width>51</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
-color: black;</string>
+background-color: rgb(255, 255, 255);
+color: black;
+background-color: : none;</string>
        </property>
        <property name="text">
         <string>0</string>
@@ -1405,14 +1421,15 @@ color: black;</string>
       <widget class="QLabel" name="refineryCostLabel">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>329</y>
+         <x>70</x>
+         <y>380</y>
          <width>51</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 color: black;</string>
        </property>
        <property name="text">
@@ -1423,13 +1440,14 @@ color: black;</string>
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>315</y>
+         <y>365</y>
          <width>51</width>
          <height>16</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 color: black;</string>
        </property>
        <property name="text">
@@ -1439,14 +1457,15 @@ color: black;</string>
       <widget class="QLabel" name="bankOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>390</x>
-         <y>301</y>
+         <x>310</x>
+         <y>351</y>
          <width>51</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 color: black;</string>
        </property>
        <property name="text">
@@ -1456,14 +1475,15 @@ color: black;</string>
       <widget class="QLabel" name="bankCostLabel">
        <property name="geometry">
         <rect>
-         <x>380</x>
-         <y>330</y>
+         <x>310</x>
+         <y>380</y>
          <width>51</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 color: black;</string>
        </property>
        <property name="text">
@@ -1473,14 +1493,15 @@ color: black;</string>
       <widget class="QLabel" name="bankIncomeLabel">
        <property name="geometry">
         <rect>
-         <x>390</x>
-         <y>316</y>
+         <x>310</x>
+         <y>366</y>
          <width>51</width>
          <height>16</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 color: black;</string>
        </property>
        <property name="text">
@@ -1490,14 +1511,15 @@ color: black;</string>
       <widget class="QLabel" name="houseOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>510</x>
-         <y>100</y>
+         <x>310</x>
+         <y>151</y>
          <width>51</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 color: black;</string>
        </property>
        <property name="text">
@@ -1507,14 +1529,15 @@ color: black;</string>
       <widget class="QLabel" name="houseCostLabel">
        <property name="geometry">
         <rect>
-         <x>500</x>
-         <y>129</y>
+         <x>310</x>
+         <y>180</y>
          <width>51</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 color: black;</string>
        </property>
        <property name="text">
@@ -1524,14 +1547,15 @@ color: black;</string>
       <widget class="QLabel" name="houseIncomeLabel">
        <property name="geometry">
         <rect>
-         <x>510</x>
-         <y>115</y>
+         <x>310</x>
+         <y>166</y>
          <width>51</width>
          <height>16</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">font-size: 10px;
+background-color: rgb(255, 255, 255);
 color: black;</string>
        </property>
        <property name="text">
@@ -1541,14 +1565,15 @@ color: black;</string>
       <widget class="QLabel" name="incomePerCycleLabel">
        <property name="geometry">
         <rect>
-         <x>690</x>
-         <y>297</y>
-         <width>91</width>
+         <x>620</x>
+         <y>270</y>
+         <width>121</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: black;</string>
+        <string notr="true">color: black;
+background-color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>$ 0</string>
@@ -1557,14 +1582,15 @@ color: black;</string>
       <widget class="QLabel" name="label_14">
        <property name="geometry">
         <rect>
-         <x>680</x>
-         <y>267</y>
+         <x>620</x>
+         <y>240</y>
          <width>121</width>
          <height>31</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">color: black;
+background-color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
@@ -1573,30 +1599,34 @@ color: black;</string>
       </widget>
      </widget>
      <widget class="QWidget" name="casinoPage">
-      <widget class="QWidget" name="widget_7" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));</string>
+      </property>
+      <widget class="QWidget" name="spinnerPlate" native="true">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>50</y>
-         <width>221</width>
-         <height>211</height>
+         <x>20</x>
+         <y>40</y>
+         <width>371</width>
+         <height>361</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-image: url(:/images/images/spiral.png)</string>
+        <string notr="true">border-image: url(:/images/images/spiral.png);
+background-color: none;</string>
        </property>
       </widget>
       <widget class="QComboBox" name="comboBox">
        <property name="geometry">
         <rect>
-         <x>320</x>
-         <y>20</y>
-         <width>79</width>
-         <height>27</height>
+         <x>640</x>
+         <y>160</y>
+         <width>131</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: black;</string>
+        <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
        <item>
         <property name="text">
@@ -1642,62 +1672,65 @@ color: black;</string>
       <widget class="QComboBox" name="comboBox_2">
        <property name="geometry">
         <rect>
-         <x>320</x>
-         <y>50</y>
-         <width>79</width>
-         <height>27</height>
+         <x>510</x>
+         <y>160</y>
+         <width>131</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: black;</string>
+        <string notr="true">color: ;
+background-color: rgb(255, 255, 255);</string>
        </property>
        <item>
         <property name="text">
-         <string>$50,000</string>
+         <string>$50</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>$100,000</string>
+         <string>$100</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>$150,000</string>
+         <string>$150</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>$200,000</string>
+         <string>$200</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>$250,000</string>
+         <string>$250</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>$500,000</string>
+         <string>$500</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>$1,000,000</string>
+         <string>$1,000</string>
         </property>
        </item>
       </widget>
       <widget class="QLabel" name="label">
        <property name="geometry">
         <rect>
-         <x>220</x>
-         <y>20</y>
-         <width>101</width>
+         <x>640</x>
+         <y>140</y>
+         <width>131</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: black;</string>
+        <string notr="true">color: black;
+background-color: rgb(255, 255, 255);
+font-size: 20px;</string>
        </property>
        <property name="text">
         <string>Pick a number</string>
@@ -1706,59 +1739,75 @@ color: black;</string>
       <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
-         <x>220</x>
-         <y>50</y>
-         <width>101</width>
+         <x>510</x>
+         <y>140</y>
+         <width>131</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: black;</string>
+        <string notr="true">color: black;
+background-color: rgb(255, 255, 255);
+font-size: 20px;</string>
        </property>
        <property name="text">
         <string>Stack your bet</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="rollCasinoPlate">
        <property name="geometry">
         <rect>
-         <x>290</x>
-         <y>80</y>
-         <width>88</width>
-         <height>27</height>
+         <x>510</x>
+         <y>200</y>
+         <width>261</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">color:  white;
-background-color: black;
-border: 2px solid red;
-border-radius: 5px;</string>
+background-color: rgb(164, 0, 0);
+border-radius: 5px;
+font-size: 25px;</string>
        </property>
        <property name="text">
         <string>ROLL</string>
        </property>
       </widget>
+      <widget class="QGraphicsView" name="graphicsView">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>-20</y>
+         <width>501</width>
+         <height>431</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="crimePage">
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/crimesS.jpg);</string>
+      </property>
       <widget class="QWidget" name="widget_8" native="true">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>281</width>
-         <height>80</height>
+         <width>491</width>
+         <height>121</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color:  lightblue;</string>
+        <string notr="true">background-color:  lightblue;
+border-image: none;</string>
        </property>
        <widget class="QWidget" name="widget_12" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>10</y>
-          <width>90</width>
-          <height>60</height>
+          <width>151</width>
+          <height>101</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1768,7 +1817,7 @@ border-radius: 5px;</string>
        <widget class="QLabel" name="label_4">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>160</x>
           <y>10</y>
           <width>67</width>
           <height>19</height>
@@ -1785,7 +1834,7 @@ font-size: 22px;</string>
        <widget class="QLabel" name="label_11">
         <property name="geometry">
          <rect>
-          <x>100</x>
+          <x>340</x>
           <y>60</y>
           <width>91</width>
           <height>19</height>
@@ -1801,7 +1850,7 @@ font-size: 22px;</string>
        <widget class="QLabel" name="theftSuccessRate">
         <property name="geometry">
          <rect>
-          <x>200</x>
+          <x>440</x>
           <y>60</y>
           <width>41</width>
           <height>19</height>
@@ -1817,8 +1866,8 @@ font-size: 22px;</string>
        <widget class="QPushButton" name="commitTheftButton">
         <property name="geometry">
          <rect>
-          <x>190</x>
-          <y>20</y>
+          <x>390</x>
+          <y>90</y>
           <width>88</width>
           <height>27</height>
          </rect>
@@ -1836,21 +1885,22 @@ color: white;</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>110</y>
-         <width>281</width>
-         <height>80</height>
+         <y>159</y>
+         <width>491</width>
+         <height>121</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color:  lightblue;</string>
+        <string notr="true">background-color:  lightblue;
+border-image: none;</string>
        </property>
        <widget class="QWidget" name="widget_13" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>10</y>
-          <width>90</width>
-          <height>60</height>
+          <width>151</width>
+          <height>101</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1860,7 +1910,7 @@ color: white;</string>
        <widget class="QLabel" name="label_5">
         <property name="geometry">
          <rect>
-          <x>100</x>
+          <x>160</x>
           <y>0</y>
           <width>91</width>
           <height>31</height>
@@ -1877,7 +1927,7 @@ font-size: 22px;</string>
        <widget class="QLabel" name="label_12">
         <property name="geometry">
          <rect>
-          <x>100</x>
+          <x>340</x>
           <y>60</y>
           <width>91</width>
           <height>19</height>
@@ -1893,7 +1943,7 @@ font-size: 22px;</string>
        <widget class="QLabel" name="robberySuccessRate">
         <property name="geometry">
          <rect>
-          <x>200</x>
+          <x>440</x>
           <y>60</y>
           <width>41</width>
           <height>19</height>
@@ -1909,8 +1959,8 @@ font-size: 22px;</string>
        <widget class="QPushButton" name="commitRobberyButton">
         <property name="geometry">
          <rect>
-          <x>190</x>
-          <y>30</y>
+          <x>390</x>
+          <y>90</y>
           <width>88</width>
           <height>27</height>
          </rect>
@@ -1928,21 +1978,22 @@ color: white;</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>200</y>
-         <width>281</width>
-         <height>80</height>
+         <y>299</y>
+         <width>491</width>
+         <height>121</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color:  lightblue;</string>
+        <string notr="true">background-color:  lightblue;
+border-image: none;</string>
        </property>
        <widget class="QWidget" name="widget_14" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>10</y>
-          <width>90</width>
-          <height>60</height>
+          <width>151</width>
+          <height>101</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1952,8 +2003,8 @@ color: white;</string>
        <widget class="QLabel" name="label_10">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>10</y>
+          <x>160</x>
+          <y>0</y>
           <width>131</width>
           <height>21</height>
          </rect>
@@ -1969,7 +2020,7 @@ font-size: 22px;</string>
        <widget class="QLabel" name="label_13">
         <property name="geometry">
          <rect>
-          <x>100</x>
+          <x>340</x>
           <y>60</y>
           <width>91</width>
           <height>19</height>
@@ -1985,7 +2036,7 @@ font-size: 22px;</string>
        <widget class="QLabel" name="bankFraudSuccessRate">
         <property name="geometry">
          <rect>
-          <x>200</x>
+          <x>440</x>
           <y>60</y>
           <width>41</width>
           <height>19</height>
@@ -2001,8 +2052,8 @@ font-size: 22px;</string>
        <widget class="QPushButton" name="commitBankFraudButton">
         <property name="geometry">
          <rect>
-          <x>190</x>
-          <y>30</y>
+          <x>390</x>
+          <y>90</y>
           <width>88</width>
           <height>27</height>
          </rect>
@@ -2019,28 +2070,30 @@ color: white;</string>
       <widget class="QWidget" name="widget_11" native="true">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>110</y>
-         <width>131</width>
-         <height>91</height>
+         <x>590</x>
+         <y>90</y>
+         <width>311</width>
+         <height>261</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-image:  url(:/images/images/handcuff.png)</string>
+        <string notr="true">border-image:  url(:/images/images/jailed.jpg)</string>
        </property>
        <widget class="QLabel" name="freedomStatus">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>40</y>
-          <width>121</width>
-          <height>31</height>
+          <x>90</x>
+          <y>230</y>
+          <width>141</width>
+          <height>21</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">font-size: 20px;
-color: black;
+color: white;
+background-color: black;
 border-image: none;
+padding-left: 20px;
 </string>
         </property>
         <property name="text">
@@ -2050,73 +2103,16 @@ border-image: none;
       </widget>
      </widget>
      <widget class="QWidget" name="stockPage">
-      <widget class="QWidget" name="widget_31" native="true">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>30</y>
-         <width>120</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <widget class="QWidget" name="widget_34" native="true">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>120</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
-border-image: url(:/images/images/gold.jpeg);</string>
-        </property>
-        <widget class="QLabel" name="label_40">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>60</y>
-           <width>41</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-image: none;
-color: black;
-background-color: white;</string>
-         </property>
-         <property name="text">
-          <string>Gold</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="goldPriceLabel">
-         <property name="geometry">
-          <rect>
-           <x>20</x>
-           <y>30</y>
-           <width>91</width>
-           <height>19</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(238, 238, 236);
-border-image: none;
-background-color: rgb(46, 52, 54);</string>
-         </property>
-         <property name="text">
-          <string>Price: $150</string>
-         </property>
-        </widget>
-       </widget>
-      </widget>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/blueBackgrond.jpg);</string>
+      </property>
       <widget class="QWidget" name="widget_35" native="true">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>240</y>
-         <width>120</width>
-         <height>80</height>
+         <x>10</x>
+         <y>220</y>
+         <width>231</width>
+         <height>151</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2126,15 +2122,16 @@ background-color: rgb(46, 52, 54);</string>
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>60</y>
-          <width>31</width>
+          <y>130</y>
+          <width>61</width>
           <height>21</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">border-image: none;
 color: black;
-background-color: white;</string>
+background-color: white;
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Iron</string>
@@ -2143,16 +2140,17 @@ background-color: white;</string>
        <widget class="QLabel" name="ironPriceLabel">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>20</y>
-          <width>91</width>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
           <height>19</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(238, 238, 236);
+         <string notr="true">color: rgb(0, 0, 0);
 border-image: none;
-background-color: rgb(46, 52, 54);</string>
+background-color:rgb(255, 255, 255);
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Price: $150</string>
@@ -2162,10 +2160,10 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QWidget" name="widget_36" native="true">
        <property name="geometry">
         <rect>
-         <x>350</x>
-         <y>230</y>
-         <width>120</width>
-         <height>80</height>
+         <x>310</x>
+         <y>220</y>
+         <width>231</width>
+         <height>151</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2175,15 +2173,16 @@ background-color: rgb(46, 52, 54);</string>
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>60</y>
-          <width>71</width>
+          <y>130</y>
+          <width>91</width>
           <height>21</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">border-image: none;
 color: black;
-background-color: white;</string>
+background-color: white;
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Platinium</string>
@@ -2192,16 +2191,17 @@ background-color: white;</string>
        <widget class="QLabel" name="platiniumPriceLabel">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>20</y>
-          <width>91</width>
+          <x>0</x>
+          <y>0</y>
+          <width>111</width>
           <height>19</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(238, 238, 236);
+         <string notr="true">color: rgb(0, 0, 0);
 border-image: none;
-background-color: rgb(46, 52, 54);</string>
+background-color: rgb(255, 255, 255);
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Price: $150</string>
@@ -2211,10 +2211,10 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QWidget" name="widget_37" native="true">
        <property name="geometry">
         <rect>
-         <x>650</x>
-         <y>230</y>
-         <width>120</width>
-         <height>80</height>
+         <x>610</x>
+         <y>220</y>
+         <width>231</width>
+         <height>151</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2223,16 +2223,17 @@ background-color: rgb(46, 52, 54);</string>
        <widget class="QLabel" name="label_44">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>60</y>
-          <width>51</width>
+          <x>150</x>
+          <y>130</y>
+          <width>71</width>
           <height>21</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">border-image: none;
 color: black;
-background-color: white;</string>
+background-color: white;
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Silver</string>
@@ -2241,16 +2242,17 @@ background-color: white;</string>
        <widget class="QLabel" name="silverPriceLabel">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>20</y>
-          <width>91</width>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
           <height>19</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(238, 238, 236);
+         <string notr="true">color: rgb(0, 0, 0);
 border-image: none;
-background-color: rgb(46, 52, 54);</string>
+background-color:rgb(255, 255, 255);
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Price: $150</string>
@@ -2260,10 +2262,10 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QWidget" name="widget_38" native="true">
        <property name="geometry">
         <rect>
-         <x>640</x>
-         <y>50</y>
-         <width>120</width>
-         <height>80</height>
+         <x>610</x>
+         <y>10</y>
+         <width>231</width>
+         <height>151</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2273,7 +2275,7 @@ background-color: rgb(46, 52, 54);</string>
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>60</y>
+          <y>130</y>
           <width>41</width>
           <height>21</height>
          </rect>
@@ -2281,7 +2283,8 @@ background-color: rgb(46, 52, 54);</string>
         <property name="styleSheet">
          <string notr="true">border-image: none;
 color: black;
-background-color: white;</string>
+background-color: white;
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Oil</string>
@@ -2290,16 +2293,17 @@ background-color: white;</string>
        <widget class="QLabel" name="oilPriceLabel">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>30</y>
-          <width>91</width>
-          <height>19</height>
+          <x>120</x>
+          <y>0</y>
+          <width>111</width>
+          <height>20</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(238, 238, 236);
+         <string notr="true">color: rgb(0, 0, 0);
 border-image: none;
-background-color: rgb(46, 52, 54);</string>
+background-color: rgb(255, 255 255);
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Price: $150</string>
@@ -2309,76 +2313,47 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QWidget" name="widget_32" native="true">
        <property name="geometry">
         <rect>
-         <x>340</x>
-         <y>40</y>
-         <width>120</width>
-         <height>80</height>
+         <x>310</x>
+         <y>10</y>
+         <width>231</width>
+         <height>151</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">border-image: url(:/images/images/bronze.jpg);</string>
        </property>
-       <widget class="QWidget" name="widget_33" native="true">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>60</y>
-          <width>120</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/images/images/bronze.jpg);</string>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_41">
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>60</y>
-          <width>51</width>
+          <y>130</y>
+          <width>71</width>
           <height>21</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">border-image: none;
 color: black;
-background-color: white;</string>
+background-color: white;
+font-size: 20px;</string>
         </property>
         <property name="text">
          <string>Bronze</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="bronzePriceLabel">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>30</y>
-          <width>91</width>
-          <height>19</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(238, 238, 236);
-border-image: none;
-background-color: rgb(46, 52, 54);</string>
-        </property>
-        <property name="text">
-         <string>Price: $150</string>
         </property>
        </widget>
       </widget>
       <widget class="QPushButton" name="goldBuyButton">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>120</y>
-         <width>51</width>
-         <height>21</height>
+         <x>9</x>
+         <y>160</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(52, 101, 164);</string>
+        <string notr="true">background-color: rgb(52, 101, 164);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>BUY</string>
@@ -2387,14 +2362,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="goldSellButton">
        <property name="geometry">
         <rect>
-         <x>90</x>
-         <y>120</y>
-         <width>51</width>
-         <height>21</height>
+         <x>162</x>
+         <y>160</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(204, 0, 0);</string>
+        <string notr="true">background-color: rgb(204, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Sell</string>
@@ -2403,14 +2379,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="bronzeSellButton">
        <property name="geometry">
         <rect>
-         <x>410</x>
-         <y>130</y>
-         <width>51</width>
-         <height>21</height>
+         <x>460</x>
+         <y>160</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(204, 0, 0);</string>
+        <string notr="true">background-color: rgb(204, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Sell</string>
@@ -2419,14 +2396,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="bronzeBuyButton">
        <property name="geometry">
         <rect>
-         <x>340</x>
-         <y>130</y>
-         <width>51</width>
-         <height>21</height>
+         <x>310</x>
+         <y>160</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(52, 101, 164);</string>
+        <string notr="true">background-color: rgb(52, 101, 164);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>BUY</string>
@@ -2435,14 +2413,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="oilSellButton">
        <property name="geometry">
         <rect>
-         <x>710</x>
-         <y>140</y>
-         <width>51</width>
-         <height>21</height>
+         <x>760</x>
+         <y>160</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(204, 0, 0);</string>
+        <string notr="true">background-color: rgb(204, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Sell</string>
@@ -2451,14 +2430,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="oilBuyButton">
        <property name="geometry">
         <rect>
-         <x>640</x>
-         <y>140</y>
-         <width>51</width>
-         <height>21</height>
+         <x>610</x>
+         <y>160</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(52, 101, 164);</string>
+        <string notr="true">background-color: rgb(52, 101, 164);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>BUY</string>
@@ -2467,14 +2447,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="ironSellButton">
        <property name="geometry">
         <rect>
-         <x>90</x>
-         <y>330</y>
-         <width>51</width>
-         <height>21</height>
+         <x>162</x>
+         <y>370</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(204, 0, 0);</string>
+        <string notr="true">background-color: rgb(204, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Sell</string>
@@ -2483,14 +2464,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="ironBuyButton">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>330</y>
-         <width>51</width>
-         <height>21</height>
+         <x>9</x>
+         <y>370</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(52, 101, 164);</string>
+        <string notr="true">background-color: rgb(52, 101, 164);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>BUY</string>
@@ -2499,14 +2481,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="platinumSellButton">
        <property name="geometry">
         <rect>
-         <x>420</x>
-         <y>320</y>
-         <width>51</width>
-         <height>21</height>
+         <x>460</x>
+         <y>370</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(204, 0, 0);</string>
+        <string notr="true">background-color: rgb(204, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Sell</string>
@@ -2515,14 +2498,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="platinumBuyButton">
        <property name="geometry">
         <rect>
-         <x>350</x>
-         <y>320</y>
-         <width>51</width>
-         <height>21</height>
+         <x>309</x>
+         <y>370</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(52, 101, 164);</string>
+        <string notr="true">background-color: rgb(52, 101, 164);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>BUY</string>
@@ -2531,14 +2515,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="silverBuyButton">
        <property name="geometry">
         <rect>
-         <x>650</x>
-         <y>320</y>
-         <width>51</width>
-         <height>21</height>
+         <x>610</x>
+         <y>370</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(52, 101, 164);</string>
+        <string notr="true">background-color: rgb(52, 101, 164);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>BUY</string>
@@ -2547,14 +2532,15 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QPushButton" name="silverSellButton">
        <property name="geometry">
         <rect>
-         <x>720</x>
-         <y>320</y>
-         <width>51</width>
-         <height>21</height>
+         <x>760</x>
+         <y>370</y>
+         <width>81</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(204, 0, 0);</string>
+        <string notr="true">background-color: rgb(204, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Sell</string>
@@ -2563,14 +2549,14 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="goldOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>140</y>
-         <width>67</width>
-         <height>19</height>
+         <x>90</x>
+         <y>160</y>
+         <width>71</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(46, 52, 54);</string>
+        <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Own: 0</string>
@@ -2579,14 +2565,14 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="bronzeOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>340</x>
-         <y>150</y>
+         <x>390</x>
+         <y>160</y>
          <width>67</width>
          <height>19</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(46, 52, 54);</string>
+        <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Own: 0</string>
@@ -2595,14 +2581,14 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="oilOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>640</x>
+         <x>690</x>
          <y>160</y>
          <width>67</width>
          <height>19</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(46, 52, 54);</string>
+        <string notr="true">color:  rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Own: 0</string>
@@ -2611,14 +2597,14 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="silverOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>650</x>
-         <y>350</y>
+         <x>690</x>
+         <y>370</y>
          <width>67</width>
          <height>19</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(46, 52, 54);</string>
+        <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Own: 0</string>
@@ -2627,14 +2613,14 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="platiniumOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>350</x>
-         <y>350</y>
+         <x>390</x>
+         <y>370</y>
          <width>67</width>
          <height>19</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(46, 52, 54);</string>
+        <string notr="true">color:  rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Own: 0</string>
@@ -2643,17 +2629,88 @@ background-color: rgb(46, 52, 54);</string>
       <widget class="QLabel" name="ironOwnedLabel">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>360</y>
+         <x>90</x>
+         <y>370</y>
          <width>67</width>
          <height>19</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(46, 52, 54);</string>
+        <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Own: 0</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_34" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>231</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-image: url(:/images/images/gold.jpeg);</string>
+       </property>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>125</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: none;
+color: black;
+background-color: white;
+font-size: 20px;</string>
+        </property>
+        <property name="text">
+         <string>Gold</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="goldPriceLabel">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>0</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:  rgb(0, 0, 0);
+border-image: none;
+background-color: rgb(255, 255, 255);
+font-size: 20px;</string>
+        </property>
+        <property name="text">
+         <string>Price: $150</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="bronzePriceLabel">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>10</y>
+         <width>111</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);
+border-image: none;
+background-color: rgb(255, 255, 255);
+font-size: 20px;</string>
+       </property>
+       <property name="text">
+        <string>Price: $150</string>
        </property>
       </widget>
      </widget>
@@ -2753,6 +2810,9 @@ font-size: 25px;</string>
       </widget>
      </widget>
      <widget class="QWidget" name="expensesPage">
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/expenses.jpg);</string>
+      </property>
       <widget class="QTextEdit" name="textEdit_2">
        <property name="geometry">
         <rect>
@@ -2763,7 +2823,8 @@ font-size: 25px;</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color:  rgb(43, 151, 156);</string>
+        <string notr="true">background-color:  rgb(43, 151, 156);
+border-image: none;</string>
        </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -2798,7 +2859,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color:  rgb(43, 151, 156);</string>
+        <string notr="true">background-color:  rgb(43, 151, 156);
+border-image: none;</string>
        </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -2832,7 +2894,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color:  rgb(43, 151, 156);</string>
+        <string notr="true">background-color:  rgb(43, 151, 156);
+border-image: none;</string>
        </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -2879,7 +2942,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color:  rgb(43, 151, 156);</string>
+        <string notr="true">background-color:  rgb(43, 151, 156);
+border-image: none;</string>
        </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -2900,7 +2964,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(164, 0, 0);</string>
+        <string notr="true">background-color: rgb(164, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>$5,000</string>
@@ -2916,7 +2981,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(164, 0, 0);</string>
+        <string notr="true">background-color: rgb(164, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Hire</string>
@@ -2932,7 +2998,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(164, 0, 0);</string>
+        <string notr="true">background-color: rgb(164, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Hire</string>
@@ -2948,7 +3015,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(164, 0, 0);</string>
+        <string notr="true">background-color: rgb(164, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Motgage</string>
@@ -2964,7 +3032,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(164, 0, 0);</string>
+        <string notr="true">background-color: rgb(164, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>$20,000</string>
@@ -2980,7 +3049,8 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(164, 0, 0);</string>
+        <string notr="true">background-color: rgb(164, 0, 0);
+border-image: none;</string>
        </property>
        <property name="text">
         <string>Rent</string>
@@ -4244,6 +4314,9 @@ p, li { white-space: pre-wrap; }
       </widget>
      </widget>
      <widget class="QWidget" name="optionPage">
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/images/blueBackgrond.jpg);</string>
+      </property>
       <widget class="QPushButton" name="pushButton_2">
        <property name="geometry">
         <rect>

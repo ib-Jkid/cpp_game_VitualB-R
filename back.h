@@ -30,6 +30,10 @@ signals:
     void on_attacked();
     void on_updateUi();
     void on_runGameCycle();
+    void on_winLotto();
+    void on_freeLunch();
+    void on_freeMedical();
+    void on_WinCar();
 private:
     void runChance();
     bool gameOver;

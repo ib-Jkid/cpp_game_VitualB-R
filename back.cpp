@@ -41,14 +41,25 @@ void Back::runChance()
     int random = rand() % 20 + 1;
     switch(random) {
         case 1:
+            emit on_winLotto();
+        break;
         case 11:
+            emit on_freeLunch();
+        break;
         case 12:
+            emit on_freeMedical();
+            break;
         case 13:
+
+        break;
         case 20:
             emit on_getRobbed();
         break;
         case 2:
+            emit on_WinCar();
+        break;
         case 14:
+        break;
         case 15:
 
             emit on_getSued();
@@ -58,15 +69,18 @@ void Back::runChance()
             emit on_riseStock();
         break;
         case 4:
+        break;
         case 16:
             emit on_fallStock();
         break;
         case 5:
+        break;
         case 17:
             emit on_heartAttack();
 
         break;
         case 6:
+        break;
         case 18:
             emit on_carCrash();
         break;
@@ -78,6 +92,7 @@ void Back::runChance()
 
         break;
         case 9:
+        break;
         case 19:
             emit on_wronglyAccused();
         break;

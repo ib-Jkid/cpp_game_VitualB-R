@@ -2,7 +2,7 @@
 
 Station::Station()
 {
-    bailAmount = 5000.0;
+    bailAmount = 1000.0;
 
 }
 

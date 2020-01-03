@@ -2,9 +2,9 @@
 
 Crime::Crime()
 {
-    robberyGain = 3000;
-    theftGain = 1000;
-    bankFraudGain = 7000;
+    robberyGain = 1000;
+    theftGain = 500;
+    bankFraudGain = 5000;
     robberyChance = 30;
     theftChance = 50;
     bankFraudChance = 10;

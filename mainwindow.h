@@ -21,6 +21,7 @@
 #include <QMessageBox>
 #include <float.h>
 #include <QtConcurrent>
+#include <QGraphicsRotation>
 
 
 
@@ -203,6 +204,8 @@ private slots:
     void on_startDoctorsTraining_clicked();
 
     void on_applyDoctorsJob_clicked();
+    void on_rollCasinoPlate_clicked();
+
 public slots:
     void updateNoticeBoard(QString info,bool tips);
     void getRobbed();
@@ -219,6 +222,10 @@ public slots:
     void updateUi();
     void payTutionFee(double fee);
     void paySalary(double salary);
+    void winLotto();
+    void freeLunch();
+    void freeMedical();
+    void winCar();
 signals:
     void on_stop();
     void tutionFeePaid(bool paid);
@@ -245,6 +252,8 @@ private:
     void updateIncomeStatementUi();
 
     double getCalculatedNetWorth();
+
+
 
 
 

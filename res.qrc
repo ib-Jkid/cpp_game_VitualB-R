@@ -50,6 +50,10 @@
         <file>images/bankingHall.jpg</file>
         <file>images/bathroom.jpg</file>
         <file>images/hospitalWard.jpg</file>
+        <file>images/crimesS.jpg</file>
+        <file>images/jailed.jpg</file>
+        <file>images/blueBackgrond.jpg</file>
+        <file>images/expenses.jpg</file>
     </qresource>
     <qresource prefix="/">
         <file>images/bank.jpeg</file>
