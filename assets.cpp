@@ -9,7 +9,7 @@ Assets::Assets()
 
     factoryOwned = 0;
     houseOwned = 0;
-    refineryOwned = 10;
+    refineryOwned = 0;
     bankOwned = 0;
 
 
