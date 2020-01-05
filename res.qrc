@@ -54,6 +54,7 @@
         <file>images/jailed.jpg</file>
         <file>images/blueBackgrond.jpg</file>
         <file>images/expenses.jpg</file>
+        <file>images/arrowdown.png</file>
     </qresource>
     <qresource prefix="/">
         <file>images/bank.jpeg</file>

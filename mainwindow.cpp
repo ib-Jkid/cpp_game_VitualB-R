@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    spinnerState = 0;
     ui->setupUi(this);
     updateUi();
     connect(&back,&Back::on_updateNoticeBoard,this,&MainWindow::updateNoticeBoard);
@@ -38,18 +39,13 @@ MainWindow::MainWindow(QWidget *parent)
 
 
    QGraphicsScene *scene = new QGraphicsScene(this);
-    QImage image("/home/street/Desktop/spiral.png");
+    QImage image(":images/spiral.png");
 
     ui->graphicsView->setScene(scene);
     QPixmap originalImage = QPixmap::fromImage(image);
     QPixmap scaledImage = originalImage.scaledToHeight( ui->graphicsView->height()-150, Qt::SmoothTransformation);
     QGraphicsPixmapItem *item = scene->addPixmap(scaledImage);
-    QPropertyAnimation *animation = new QPropertyAnimation(scene,"rotation");
-    animation->setDuration(3000);
-    animation->setStartValue(0);
-    animation->setEndValue(45);
-    animation->setEasingCurve(QEasingCurve::Linear);
-    animation->start();
+
 }
 
 
@@ -100,8 +96,8 @@ void MainWindow::runGameCycle() {
 
         return ;
     }
-    if(getCalculatedNetWorth() > 1000000) {
-        QMessageBox::information(this,"You Won","You net worth is over $1,000,000");
+    if(getCalculatedNetWorth() > 1000000000) {
+        QMessageBox::information(this,"You Won","You net worth is over $1,000,000,000");
         emit on_stop();
 
 
@@ -363,15 +359,16 @@ void MainWindow::on_groomingPageButton_clicked()
  * */
 
 void MainWindow::updateIncomeStatementUi()  {
-    ui->activeIncomeLabel->setText("$"+QString::number(job.getCurrentIncome())+"/C");
-    ui->passiveIncomeLabel->setText("$"+QString::number(assets.getTotalIncome())+"/C");
+    ui->activeIncomeLabel->setText("$"+QString::number((int)job.getCurrentIncome())+"/C");
+    ui->passiveIncomeLabel->setText("$"+QString::number((int) assets.getTotalIncome())+"/C");
 
     ui->totalExpensesLabel->setText("$"+QString::number(expenses.getExpenses())+"/C");
+    ui->assetWorthLabel->setText("$"+QString::number((int) assets.getTotalAssetWorth()));
 
-    ui->stockWorthLabel->setText("$"+QString::number(stock.getStockWorth()) +"/C");
-    ui->cashFlowLabel->setText("$"+QString::number(bank.getFinancialSummary()+bank.getDept()));
-    ui->deptLabel->setText("$"+QString::number(bank.getDept() + bank.getSchoolLoan()));
-    ui->NetWorthLabel->setText("$"+QString::number(getCalculatedNetWorth()));
+    ui->stockWorthLabel->setText("$"+QString::number((int)stock.getStockWorth()) +"/C");
+    ui->cashFlowLabel->setText("$"+QString::number((int)(bank.getFinancialSummary()+bank.getDept())));
+    ui->deptLabel->setText("$"+QString::number((int)(bank.getDept() + bank.getSchoolLoan())));
+    ui->NetWorthLabel->setText("$"+QString::number((int) getCalculatedNetWorth()));
 }
 void MainWindow::updateNoticeBoard(QString info,bool tips = false) {
     if(tips) {
@@ -1570,5 +1567,90 @@ void MainWindow::on_applyDoctorsJob_clicked()
 
 void MainWindow::on_rollCasinoPlate_clicked()
 {
+    QString betAmountString = ui->casinoBet->currentText();
+    double betAmount = 0;
+    if(betAmountString == "$50") {
+        betAmount = 50.0;
+    }else if(betAmountString == "$100") {
+        betAmount = 100.0;
+    }else if(betAmountString == "$150") {
+        betAmount = 150.0;
+    }else if(betAmountString == "$200") {
+        betAmount = 200.0;
+    }else if(betAmountString == "$250") {
+        betAmount = 250.0;
+    }else if(betAmountString == "$500") {
+        betAmount = 500.0;
+    }else if(betAmountString == "$1000") {
+        betAmount = 1000.0;
+    }
+    if(bank.spend(betAmount)) {
+        int ran = rand() % 8;
+        switch (spinnerState) {
+            case 0:
+                ui->graphicsView->rotate(0);
+            break;
+        case 45:
+            ui->graphicsView->rotate(-315);
+        break;
+        case 90:
+            ui->graphicsView->rotate(-270);
+        break;
+        case 135:
+            ui->graphicsView->rotate(-225);
+        break;
+        case 180:
+            ui->graphicsView->rotate(-180);
+        break;
+        case 225:
+            ui->graphicsView->rotate(-135);
+        break;
+        case 270:
+            ui->graphicsView->rotate(-90);
+        break;
+        case 315:
+            ui->graphicsView->rotate(-45);
+        break;
+        }
+
+        ui->graphicsView->rotate(-45*(ran));
+        spinnerState = 45 * ran;
+        int currentBetNumberInt;
+        QString currentBetNumber = ui->casinoNumber->currentText();
+        if(currentBetNumber == "1") {
+            currentBetNumberInt = 1;
+        }else if(currentBetNumber == "2") {
+            currentBetNumberInt = 2;
+        }else if(currentBetNumber == "3") {
+            currentBetNumberInt = 3;
+        }else if(currentBetNumber == "4") {
+            currentBetNumberInt = 4;
+        }else if(currentBetNumber == "5") {
+            currentBetNumberInt = 5;
+        }else if(currentBetNumber == "6") {
+            currentBetNumberInt = 6;
+        }else if(currentBetNumber == "7") {
+            currentBetNumberInt = 7;
+        }else if(currentBetNumber == "8") {
+            currentBetNumberInt = 8;
+        }else {
+            currentBetNumberInt = 0;
+        }
+
+        if(currentBetNumberInt == (ran+1) ) {
+            //won
+            bank.earn(betAmount*10);
+            updateBankUi();
+            updateNoticeBoard("You won $"+QString::number(betAmount*10)+" congratulations");
+            ui->casinoBoard->setText("YOU WON");
+        }else {
+            updateBankUi();
+             updateNoticeBoard("You lost the game");
+             ui->casinoBoard->setText("YOU LOST");
+        }
+    }else {
+        updateNoticeBoard("You don't have surficient cash");
+    }
+
 
 }

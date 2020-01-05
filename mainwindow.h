@@ -253,6 +253,8 @@ private:
 
     double getCalculatedNetWorth();
 
+    int spinnerState;
+
 
 
 
