@@ -23,12 +23,12 @@ The game virtualize the financial struggle to the top you loose when your Health
 
 ## SCREENSHOTS
 ### Bank
-![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot1.png?raw=true)
+![Bank Image](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot1.png?raw=true)
 
 ### Crime
-![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot2.png?raw=true)
+![Crime Image](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot2.png?raw=true)
 
 ### Jobs
-![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot3.png?raw=true)
+![Job Image](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot3.png?raw=true)
 
 
