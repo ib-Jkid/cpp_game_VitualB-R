@@ -10,8 +10,8 @@ Learn new Skill
 Choose jobs between labourer, brick layer, doctor, police officer
 
 DOWNLOAD
-+ For Linux [a link](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/executables/linux/vitualB)
-+ For Windows [a link](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/executables/windows/vitualB.exe)
++ For [Linux](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/executables/linux/vitualB)
++ For [Windows](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/executables/windows/vitualB.exe)
 
 + Bank
 ![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot1.png?raw=true)
