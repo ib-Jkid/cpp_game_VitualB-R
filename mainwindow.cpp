@@ -163,9 +163,10 @@ void MainWindow::winCar()
 
 void MainWindow::notify(QString title, QString msg)
 {
-    QString color[] = {"red", "blue", "brown","white"};
-    int i = rand() % 4;
-    ui->gameUpdateBoard->setHtml(title+":</b>"+"<font color='"+color[i]+"'> "+ msg + "</font>");
+    QVector<QString> color = {"red", "blue", "brown","white"};
+//    QString color[] = {"red", "blue", "brown","white"};
+    int i = rand() % color.size();
+    ui->gameUpdateBoard->setHtml(title+":</b>"+"<font color='"+color.at(i)+"'> "+ msg + "</font>");
 }
 bool MainWindow::doAction(int value) {
     int ran = rand()% 5+1;
