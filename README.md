@@ -21,13 +21,13 @@ Choose jobs between labourer, brick layer, doctor, police officer
 + For [Windows](https://github.com/ib-Jkid/cpp_game_VitualB-R/raw/master/executables/windows/vitualB.exe)
 
 ## SCREENSHOTS
-+ Bank
+### Bank
 ![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot1.png?raw=true)
 
-+ Crime
+### Crime
 ![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot2.png?raw=true)
 
-+ Jobs
+### Jobs
 ![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot3.png?raw=true)
 
 
