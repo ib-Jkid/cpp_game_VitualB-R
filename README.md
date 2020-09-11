@@ -12,9 +12,10 @@ The game virtualize the financial struggle to the top you loose when your Health
 + Buy Stocks
 + Stay Alive
 + Grow
++ Earn
 + Win
 
-Choose jobs between labourer, brick layer, doctor, police officer
+**Choose jobs between labourer, brick layer, doctor, police officer**
 
 ## DOWNLOAD
 + For [Linux](https://github.com/ib-Jkid/cpp_game_VitualB-R/raw/master/executables/linux/vitualB)
