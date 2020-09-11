@@ -17,8 +17,8 @@ The game virtualize the financial struggle to the top you loose when your Health
 Choose jobs between labourer, brick layer, doctor, police officer
 
 ## DOWNLOAD
-+ For [Linux](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/executables/linux/vitualB)
-+ For [Windows](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/executables/windows/vitualB.exe)
++ For [Linux](https://github.com/ib-Jkid/cpp_game_VitualB-R/raw/master/executables/linux/vitualB)
++ For [Windows](https://github.com/ib-Jkid/cpp_game_VitualB-R/raw/master/executables/windows/vitualB.exe)
 
 ## SCREENSHOTS
 + Bank
