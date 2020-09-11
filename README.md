@@ -9,4 +9,8 @@ Do Jobs
 Learn new Skill
 Choose jobs between labourer, brick layer, doctor, police officer
 
-![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/images/screenshot3.png?raw=true)
+![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot1.png?raw=true)
+
+![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot2.png?raw=true)
+
+![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot3.png?raw=true)
