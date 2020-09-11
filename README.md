@@ -1,4 +1,7 @@
 # CPP_Game_VitualB-R
+
+A C++ Stategy Game built with QT Framework 
+
 ## STRATEGY
 ### A C++ Stategy Game Using QT 
 
