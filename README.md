@@ -1,18 +1,26 @@
-# cpp_game_VitualB-R
-# STRATEGY
-# A C++ Stategy game using QT 
+# CPP_Game_VitualB-R
+## STRATEGY
+### A C++ Stategy Game Using QT 
 
-the game virtualize the financial struggle to the top you loose when your Health or networth hits 0 and win when networth reaches 1 billion
+The game virtualize the financial struggle to the top you loose when your Health or networth hits 0 and win when networth reaches 1 billion
 
-Aquire Asset
-Do Jobs
-Learn new Skill
+## ACTIVITIES
++ Aquire Asset
++ Do Jobs
++ Learn new Skill
++ Commit Crimes
++ Buy Stocks
++ Stay Alive
++ Grow
++ Win
+
 Choose jobs between labourer, brick layer, doctor, police officer
 
-DOWNLOAD
+## DOWNLOAD
 + For [Linux](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/executables/linux/vitualB)
 + For [Windows](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/executables/windows/vitualB.exe)
 
+## SCREENSHOTS
 + Bank
 ![alt text](https://github.com/ib-Jkid/cpp_game_VitualB-R/blob/master/images/Screenshot1.png?raw=true)
 
